@@ -1,0 +1,49 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 18px;
+    font-size: $font-size-base;
+    font-family: $font-family-default;
+    line-height: 1.2;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+.portrait {
+    position: absolute;
+}
+
+a {
+    color: $color-primary-darker;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.data-table {
+    border-collapse: collapse;
+
+    td {
+        padding: 5px;
+        border: 1px solid $border-color;
+    }
+}
+
+.list {
+    li {
+        // display: inline-block;
+        padding: 10px;
+    }
+}

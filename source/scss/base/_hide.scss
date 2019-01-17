@@ -1,0 +1,69 @@
+/*.keyboard,*/
+.file-controls,
+.note-controls,
+.player-controls,
+.tempo-controls,
+.settings-controls,
+.playback-controls,
+.bookmark-controls
+{
+    /*display: none;*/
+}
+
+
+.bookmark-controls {
+    /*display: none;*/
+}
+
+.controls {
+    /*display: none;*/
+}
+
+.note {
+    /*display: none;*/
+}
+
+.app {
+    /*display: none;*/
+
+    &-header {
+        /*display: none;*/
+    }
+
+    &-content {
+        /*display: none;*/
+    }
+
+    &-footer {
+        /*display: none;*/
+    }
+}
+
+.keyboard {
+    /*display: none;*/
+
+    .black-key {
+        /*display: none;*/
+    }
+}
+/*
+.treble-clef {
+    display: none;
+}
+
+.song-title {
+    display: none;
+}
+
+.visualizer-display {
+    display: none;
+}
+
+.time-signature {
+    display: none;
+}
+
+.switch {
+    display: none;
+}
+*/
