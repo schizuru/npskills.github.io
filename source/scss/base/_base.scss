@@ -4,13 +4,12 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
 body {
-    font-size: 18px;
     font-size: $font-size-base;
     font-family: $font-family-default;
     line-height: 1.2;
@@ -25,7 +24,7 @@ h1, h2, h3 {
 }
 
 a {
-    color: $color-primary-darker;
+    color: $color-link;
 
     &:hover {
         text-decoration: none;
@@ -46,4 +45,27 @@ a {
         // display: inline-block;
         padding: 10px;
     }
+}
+
+.button {
+    background: $border-color;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    display: block;
+    border-radius: 2px;
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    bottom: 5px;
+}
+
+.plus {
+    left: 5px;
+}
+.minus {
+    line-height: 18px;
+    right: 5px;
 }

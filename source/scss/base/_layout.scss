@@ -1,37 +1,133 @@
+.character {
+    position: relative;
+}
 .skill-trees,
 .tier {
     @include flexbox;
 }
 
 .skill-trees {
+    border: 1px solid #ccc;
     // margin: 0 5px;
     position: relative;
     z-index: 100;
     background: rgba(255, 255, 255, .7);
     border-bottom: 5px solid #000;
     padding: 0 0 20px;
-    margin: 0 0 20px;
+    margin: 0 5px 20px;
 }
 
 .tree {
-    margin: 0 5px;
-    width: 33%;
+    width: 33.33333%;
 }
 
 .tier {
     border: 1px solid $border-color;
-    margin: 5px 0;
-    padding: 0 5px;
+    padding: 30px 5px 5px;
+    margin: 5px;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        top: 5px;
+    }
 }
 
+// .tier-1::before {
+//     content: 'I';
+// }
+// .tier-2::before {
+//     content: 'II';
+// }
+// .tier-3::before {
+//     content: 'III';
+// }
+// .tier-4::before {
+//     content: 'IV';
+// }
+// .tier-5::before {
+//     content: 'V';
+// }
+
 .slot {
-    margin: 10px 5px;
-    width: 33%;
+    width: 33.33333%;
     text-align: center;
+    position: relative;
 }
 
 .tier-5 {
     .slot {
-        width: 100%;
+        margin: auto;
     }
 }
+
+img {
+    opacity: 0;
+    max-width: 62px;
+    width: 100%;
+}
+
+.skill-icon {
+    border: 1px solid #ccc;
+}
+
+h2 {
+    color: transparent;
+}
+
+.character-name {
+    margin: 10px 30px 10px 5px;
+}
+
+.skill-name {
+    color: transparent;
+}
+
+.skill-description {
+    font-size: $font-size-small;
+    color: transparent;
+}
+
+.collapse {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    background: $border-color;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+[data-collapsed='true'] > .collapse::before {
+    content: '+';
+}
+
+[data-collapsed='false'] > .collapse::before {
+    content: '-';
+}
+
+.tier {
+    &[data-collapsed='true'] {
+        .skill-details {
+            display: none;
+        }
+
+    }
+    &[data-collapsed='false'] {
+        .skill-details {
+            display: block;
+        }
+    }
+}
+
+.tree {
+    .collapse {
+        top: 5px;
+        border-radius: 50%;
+    }
+}
+
