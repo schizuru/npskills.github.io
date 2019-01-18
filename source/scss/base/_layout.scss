@@ -71,21 +71,16 @@ img {
     border: 1px solid #ccc;
 }
 
-h2 {
-    color: transparent;
-}
 
 .character-name {
     margin: 10px 30px 10px 5px;
 }
 
 .skill-name {
-    color: transparent;
 }
 
 .skill-description {
     font-size: $font-size-small;
-    color: transparent;
 }
 
 .collapse {
@@ -113,7 +108,7 @@ h2 {
 .tier {
     &[data-collapsed='true'] {
         .skill-details {
-            display: none;
+            // display: none;
         }
 
     }
@@ -129,5 +124,9 @@ h2 {
         top: 5px;
         border-radius: 50%;
     }
+}
+
+.actions {
+    display: none;
 }
 
