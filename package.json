@@ -1,5 +1,5 @@
 {
-  "name": "Piano",
+  "name": "Nine Parchments - Skill Tree Calculator",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://schizuru@bitbucket.org/schizuru/apps.git"
+    "url": "https://github.com/schizuru/npskills.github.io.git"
   },
   "author": "Chizuru Shiomi <schizuru@gmail.com>",
   "license": "ISC",

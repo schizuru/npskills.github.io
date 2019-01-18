@@ -1,17 +1,8 @@
 @charset 'UTF-8';
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @import 'vendor/reset.custom';
 @import 'helpers/variables';
 @import 'helpers/mixins';
-@import 'base/base';
-@import 'base/layout';
-@import 'components/amadeus';
-@import 'components/carabel';
-@import 'components/cornelius';
-@import 'components/gislan';
-@import 'components/marvek';
-@import 'components/nim';
-@import 'components/owl';
-@import 'components/rudolfus';
-@import 'components/selius';
+@import 'components/base';
+@import 'components/layout';
