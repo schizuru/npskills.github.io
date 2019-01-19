@@ -1,5 +1,6 @@
 var characters = [
     {
+        directory: 'cornelius',
         name: {
             en: 'Cornelius Crownsteed',
             jp: 'コーネリアス'
@@ -11,6 +12,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Aptitude',
                                     jp: '素質'
@@ -22,6 +24,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Perseverance',
                                     jp: '忍耐力'
@@ -37,6 +40,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Boxing Lessons',
                                     jp: 'ボクシングの練習'
@@ -48,6 +52,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Viridity',
                                     jp: '生命力'
@@ -63,6 +68,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Elemental Resistance',
                                     jp: '属性耐性'
@@ -74,6 +80,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Field Work',
                                     jp: 'フィールドワーク'
@@ -89,6 +96,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Elusion',
                                     jp: '回避'
@@ -100,6 +108,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Crownsteed Pride',
                                     jp: 'クラウンスティード家の誇り'
@@ -111,6 +120,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 1,
                                 name: {
                                     en: 'Vigour',
                                     jp: '活力'
@@ -126,6 +136,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 1,
                                 name: {
                                     en: 'Young Lord',
                                     jp: '若き領主'
@@ -145,6 +156,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Spellcraft',
                                     jp: '魔法精製'
@@ -156,6 +168,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Perserverance II',
                                     jp: '忍耐力Ⅱ'
@@ -171,6 +184,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Channeler',
                                     jp: 'チャネラー'
@@ -182,6 +196,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Spellslinger',
                                     jp: 'スペルスリンガー'
@@ -193,6 +208,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Lead the Field',
                                     jp: 'フィールドの支配者'
@@ -208,6 +224,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Reinvigorate',
                                     jp: '躍動'
@@ -219,6 +236,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Homework',
                                     jp: '宿題'
@@ -234,6 +252,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Hubris',
                                     jp: '思い上がり'
@@ -245,6 +264,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Brainstorm',
                                     jp: 'ブレインストーミング'
@@ -256,6 +276,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 1,
                                 name: {
                                     en: 'Dangerous Spells',
                                     jp: '危険な魔法'
@@ -271,6 +292,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 1,
                                 name: {
                                     en: 'Champion',
                                     jp: 'チャンピオン'
@@ -290,6 +312,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Liveliness',
                                     jp: '活気'
@@ -301,6 +324,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Panic Casting',
                                     jp: 'パニックマジック'
@@ -316,6 +340,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Transference',
                                     jp: '転換'
@@ -327,6 +352,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Practice Dummy',
                                     jp: 'サンドバッグ'
@@ -338,6 +364,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Echoing Enchantment',
                                     jp: '反響する魔力'
@@ -353,6 +380,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Physical Education',
                                     jp: '物理の勉強'
@@ -364,6 +392,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Duteous',
                                     jp: '忠実'
@@ -379,6 +408,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Dignity',
                                     jp: '威厳'
@@ -390,6 +420,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Dodge!',
                                     jp: 'よけろ！'
@@ -401,6 +432,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Rising Spirits',
                                     jp: 'ライジングスピリッツ'
@@ -416,6 +448,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 1,
                                 name: {
                                     en: 'Blue Blood',
                                     jp: '青い血'
@@ -432,6 +465,7 @@ var characters = [
         ]
     },
     {
+        directory: 'gislan',
         name: {
             en: 'Gislan of Alcyon',
             jp: 'ギスラン'
@@ -443,6 +477,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Spellcraft',
                                     jp: '魔術精製'
@@ -454,6 +489,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Mana Flow',
                                     jp: 'マナフロー'
@@ -465,6 +501,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Viridity',
                                     jp: '生命力'
@@ -480,6 +517,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Gift of Nature',
                                     jp: '自然の恵み'
@@ -491,6 +529,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Protector of Life',
                                     jp: '生命の守護者'
@@ -506,6 +545,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Field Work',
                                     jp: 'フィールドワーク'
@@ -517,6 +557,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Cunning',
                                     jp: '悪だくみ'
@@ -528,6 +569,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 1,
                                 name: {
                                     en: 'Deep Roots',
                                     jp: '深い根'
@@ -543,6 +585,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Flourish',
                                     jp: '繁栄'
@@ -554,6 +597,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Regrowth',
                                     jp: '再生'
@@ -569,6 +613,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 1,
                                 name: {
                                     en: 'Everbloom',
                                     jp: '四季咲き'
@@ -588,6 +633,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Lively Company',
                                     jp: 'にぎやかな仲間'
@@ -603,6 +649,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Channeler',
                                     jp: 'チャネラー'
@@ -614,6 +661,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Spellslinger',
                                     jp: 'スペルスリンガー'
@@ -625,6 +673,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Upheaval',
                                     jp: '大騒ぎ'
@@ -640,6 +689,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Hindrances',
                                     jp: '妨害'
@@ -651,6 +701,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Physical Education',
                                     jp: '物理の勉強'
@@ -666,6 +717,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Thrill of the Chase',
                                     jp: '追跡のスリル'
@@ -677,6 +729,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Homework',
                                     jp: '宿題'
@@ -688,6 +741,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 1,
                                 name: {
                                     en: 'Clairvoyance',
                                     jp: '予知能力'
@@ -703,6 +757,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 1,
                                 name: {
                                     en: 'Bewitching',
                                     jp: 'チャンピオン'
@@ -722,6 +777,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Rites of Spring',
                                     jp: '春の儀式'
@@ -733,6 +789,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Thick-Skinned',
                                     jp: '厚い皮膚'
@@ -748,6 +805,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Transference',
                                     jp: '転換'
@@ -759,6 +817,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Death Resistance',
                                     jp: '死属性耐性'
@@ -770,6 +829,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 1,
                                 name: {
                                     en: 'Rising Spirits',
                                     jp: 'ライジングスピリッツ'
@@ -785,6 +845,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Liveliness',
                                     jp: '活気'
@@ -796,6 +857,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Panic Casting',
                                     jp: 'パニックマジック'
@@ -811,6 +873,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Beckon Life',
                                     jp: '手招く生命'
@@ -822,6 +885,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Elemental Resistance',
                                     jp: '属性耐性'
@@ -837,6 +901,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 1,
                                 name: {
                                     en: 'Fountain of Life',
                                     jp: '生命の泉'
@@ -853,6 +918,7 @@ var characters = [
         ]
     },
     {
+        directory: 'marvek',
         name: {
             en: 'Marvek the Torrid',
             jp: 'マーヴェック'
@@ -864,6 +930,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Spellcraft',
                                     jp: '魔術精製'
@@ -875,6 +942,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Lead the Field',
                                     jp: 'フィールドの支配者'
@@ -890,6 +958,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Homework',
                                     jp: '宿題'
@@ -901,6 +970,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Thick-Skinned',
                                     jp: '厚い皮膚'
@@ -916,6 +986,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Ignite',
                                     jp: '着火'
@@ -927,6 +998,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Flame Wards',
                                     jp: '炎の加護'
@@ -938,6 +1010,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 1,
                                 name: {
                                     en: 'Backbone',
                                     jp: '気骨'
@@ -953,6 +1026,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Chastise',
                                     jp: '懲罰'
@@ -964,6 +1038,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Experienced',
                                     jp: '経験者'
@@ -975,6 +1050,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 1,
                                 name: {
                                     en: 'Simmer',
                                     jp: '沸騰寸前'
@@ -990,6 +1066,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 1,
                                 name: {
                                     en: 'Special Recipe',
                                     jp: '特別なレシピ'
@@ -1009,6 +1086,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Firepower',
                                     jp: '火力'
@@ -1020,6 +1098,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Seeing Red',
                                     jp: '激怒'
@@ -1035,6 +1114,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Inflame',
                                     jp: '炎に包まれて'
@@ -1046,6 +1126,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Crunchy Crust',
                                     jp: 'サクサクの生地'
@@ -1061,6 +1142,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Hot Spot',
                                     jp: 'ホットスポット'
@@ -1072,6 +1154,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Amplified Flames',
                                     jp: '延焼'
@@ -1083,6 +1166,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 1,
                                 name: {
                                     en: 'Searing Handshake',
                                     jp: '燃え盛る手'
@@ -1098,6 +1182,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Baby Boom',
                                     jp: 'ベビーブーム'
@@ -1109,6 +1194,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Blowtorch',
                                     jp: 'ブロートーチ'
@@ -1120,6 +1206,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Tough Cookie',
                                     jp: 'タフ・クッキー'
@@ -1135,6 +1222,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 1,
                                 name: {
                                     en: 'Trailblazer',
                                     jp: '先導者'
@@ -1154,6 +1242,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Liveliness',
                                     jp: '活気'
@@ -1165,6 +1254,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Fire Resistance',
                                     jp: '炎耐性'
@@ -1180,6 +1270,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Physical Education',
                                     jp: '物理の勉強'
@@ -1191,6 +1282,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Mana Flow',
                                     jp: 'マナフロー'
@@ -1206,6 +1298,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Ice Resistance',
                                     jp: '氷耐性'
@@ -1217,6 +1310,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Lightning Resistance',
                                     jp: '雷耐性'
@@ -1228,6 +1322,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 1,
                                 name: {
                                     en: 'Firebrand',
                                     jp: 'ファイヤーブランド'
@@ -1243,6 +1338,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Mana Barrier',
                                     jp: 'マナバリア'
@@ -1254,6 +1350,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Rising Spirits',
                                     jp: 'ライジングスピリッツ'
@@ -1269,6 +1366,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 1,
                                 name: {
                                     en: 'Heat Stroke',
                                     jp: '熱中症'
@@ -1285,6 +1383,7 @@ var characters = [
         ]
     },
     {
+        directory: 'carabel',
         name: {
             en: 'Carabel the Glacial',
             jp: 'カラベル'
@@ -1296,6 +1395,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Spellcraft',
                                     jp: '魔術精製'
@@ -1307,6 +1407,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Numbing Thumb',
                                     jp: '震える指'
@@ -1322,6 +1423,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Coldproof',
                                     jp: '寒冷地仕様'
@@ -1333,6 +1435,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Thick-Skinned',
                                     jp: '厚い皮膚'
@@ -1348,6 +1451,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Battlemage',
                                     jp: 'バトルメイジ'
@@ -1359,6 +1463,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Viridity',
                                     jp: '生命力'
@@ -1374,6 +1479,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Ice Wards',
                                     jp: '氷の加護'
@@ -1385,6 +1491,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Jinx',
                                     jp: 'ジンクス'
@@ -1396,6 +1503,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 1,
                                 name: {
                                     en: 'Rising Spirits',
                                     jp: 'ライジングスピリッツ'
@@ -1411,6 +1519,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Flash Freezing',
                                     jp: '急速冷凍'
@@ -1430,6 +1539,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Snow Maiden',
                                     jp: '雪の乙女'
@@ -1441,6 +1551,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Ice Attunement',
                                     jp: '氷との調和'
@@ -1456,6 +1567,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Frost-Bound',
                                     jp: '氷攻め'
@@ -1467,6 +1579,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Cold Shoulder',
                                     jp: '冷遇'
@@ -1482,6 +1595,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Deep Freeze',
                                     jp: 'ディープフリーズ'
@@ -1493,6 +1607,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Dead of Winter',
                                     jp: '冬の嵐'
@@ -1508,6 +1623,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Bitter Cold',
                                     jp: '極寒'
@@ -1519,6 +1635,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Relentless Winter',
                                     jp: '厳しい冬'
@@ -1530,6 +1647,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 1,
                                 name: {
                                     en: 'On Thin Ice',
                                     jp: '薄い氷の上'
@@ -1545,6 +1663,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 1,
                                 name: {
                                     en: 'Glacial Grounds',
                                     jp: '氷の大地'
@@ -1564,6 +1683,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Liveliness',
                                     jp: '活気'
@@ -1575,6 +1695,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Ice Resistance',
                                     jp: '氷耐性'
@@ -1590,6 +1711,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Fire Resistance',
                                     jp: '炎耐性'
@@ -1601,6 +1723,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Death Resistance',
                                     jp: '死属性耐性'
@@ -1612,6 +1735,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Lightning Resistance',
                                     jp: '雷耐性'
@@ -1627,6 +1751,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Cold Front',
                                     jp: '寒冷前線'
@@ -1638,6 +1763,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Physical Education',
                                     jp: '物理の勉強'
@@ -1653,6 +1779,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Snowball',
                                     jp: '雪玉'
@@ -1664,6 +1791,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Tooth and Claw',
                                     jp: '全力'
@@ -1675,6 +1803,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 1,
                                 name: {
                                     en: 'Breather',
                                     jp: 'ひと休み'
@@ -1690,6 +1819,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 1,
                                 name: {
                                     en: 'Ice Barrier',
                                     jp: 'アイスバリア'
@@ -1706,6 +1836,7 @@ var characters = [
         ]
     },
     {
+        directory: 'rudolfus',
         name: {
             en: 'Rudolfus the Strange',
             jp: 'ルドルファス'
@@ -1717,6 +1848,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Thick-Skinned',
                                     jp: '厚い皮膚'
@@ -1728,6 +1860,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Aptitude',
                                     jp: '素質'
@@ -1743,6 +1876,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Liveliness',
                                     jp: '活気'
@@ -1754,6 +1888,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Mana Flow',
                                     jp: 'マナフロー'
@@ -1769,6 +1904,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Chaotic Harmony',
                                     jp: '混沌と調和'
@@ -1780,6 +1916,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Jinx',
                                     jp: 'ジンクス'
@@ -1791,6 +1928,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 1,
                                 name: {
                                     en: 'Cursed Fields',
                                     jp: '呪いの領域'
@@ -1806,6 +1944,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Death Wards',
                                     jp: '死の加護'
@@ -1817,6 +1956,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Dying Breath',
                                     jp: '死の息吹'
@@ -1828,6 +1968,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 1,
                                 name: {
                                     en: 'Fields of Death',
                                     jp: '死の領域'
@@ -1843,6 +1984,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 1,
                                 name: {
                                     en: 'Death Orbs',
                                     jp: '死のオーブ'
@@ -1862,6 +2004,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Wickedness',
                                     jp: '邪悪'
@@ -1873,6 +2016,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Death Resistance',
                                     jp: '死属性耐性'
@@ -1888,6 +2032,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Circle of Life',
                                     jp: '命の輪'
@@ -1899,6 +2044,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Dark Shadows',
                                     jp: '暗い影'
@@ -1914,6 +2060,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Wither',
                                     jp: '衰退'
@@ -1925,6 +2072,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Inevitable Doom',
                                     jp: '破滅の運命'
@@ -1936,6 +2084,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Sinister Aura',
                                     jp: '邪悪なオーラ'
@@ -1951,6 +2100,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Sudden Death',
                                     jp: '突然死'
@@ -1962,6 +2112,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Leech',
                                     jp: 'ヒル'
@@ -1977,6 +2128,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 1,
                                 name: {
                                     en: 'Spectral Lines',
                                     jp: 'スペクトルライン'
@@ -1996,6 +2148,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Hindrances',
                                     jp: '妨害'
@@ -2007,6 +2160,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Field Work',
                                     jp: 'フィールドワーク'
@@ -2022,6 +2176,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Face to Face',
                                     jp: '1vs1'
@@ -2033,6 +2188,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Homework',
                                     jp: '宿題'
@@ -2048,6 +2204,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Creeping Corruption',
                                     jp: '堕落'
@@ -2059,6 +2216,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Toe to Toe',
                                     jp: '真っ向勝負'
@@ -2070,6 +2228,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 1,
                                 name: {
                                     en: 'Dangerous Spells',
                                     jp: '危険な魔法'
@@ -2085,6 +2244,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Terror',
                                     jp: '恐怖'
@@ -2096,6 +2256,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Physical Education',
                                     jp: '物理の勉強'
@@ -2111,6 +2272,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 1,
                                 name: {
                                     en: 'Rising Power',
                                     jp: 'ライジングパワー'
@@ -2127,6 +2289,7 @@ var characters = [
         ]
     },
     {
+        directory: 'owl',
         name: {
             en: 'The Mechanical Owl',
             jp: 'メカフクロウ'
@@ -2138,6 +2301,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Owlish Wisdom',
                                     jp: 'フクロウの知恵'
@@ -2149,6 +2313,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Thick-Skinned',
                                     jp: '厚い皮膚'
@@ -2164,6 +2329,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Battlebird',
                                     jp: 'バトルバード'
@@ -2175,6 +2341,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Improved Circuitry',
                                     jp: '改良回路'
@@ -2190,6 +2357,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Viridity',
                                     jp: '生命力'
@@ -2201,6 +2369,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Static Charge',
                                     jp: '静電荷'
@@ -2212,6 +2381,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Conserve Energy',
                                     jp: 'エネルギー節約'
@@ -2227,6 +2397,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Lightning Wards',
                                     jp: '雷の加護'
@@ -2238,6 +2409,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Arcane Infusion',
                                     jp: '神秘の浸出液'
@@ -2249,6 +2421,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 1,
                                 name: {
                                     en: 'Reconstruct',
                                     jp: '再構成'
@@ -2264,6 +2437,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 1,
                                 name: {
                                     en: 'Electrostatic Field',
                                     jp: '静電場'
@@ -2283,6 +2457,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Lightning Infusion',
                                     jp: '雷の浸出液'
@@ -2294,6 +2469,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Inductance',
                                     jp: 'インダクタンス'
@@ -2309,6 +2485,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Nest Egg',
                                     jp: '貯蓄'
@@ -2320,6 +2497,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Sparkplug',
                                     jp: 'スパークプラグ'
@@ -2335,6 +2513,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Birds of a Feather',
                                     jp: '梟合の衆'
@@ -2346,6 +2525,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Well-Focused Owl',
                                     jp: 'フクロウの集中'
@@ -2361,6 +2541,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Lightningstuck',
                                     jp: '落雷'
@@ -2372,6 +2553,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Bigger Batteries',
                                     jp: '大容量バッテリー'
@@ -2383,6 +2565,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 1,
                                 name: {
                                     en: 'Bird of Prey',
                                     jp: '猛禽'
@@ -2398,6 +2581,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 1,
                                 name: {
                                     en: 'Eye of Storm',
                                     jp: '台風の目'
@@ -2417,6 +2601,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Liveliness',
                                     jp: '活気'
@@ -2428,6 +2613,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Lightning Resistance',
                                     jp: '雷耐性'
@@ -2443,6 +2629,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Burst of Flight',
                                     jp: '急速離陸'
@@ -2454,6 +2641,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Panic Casting',
                                     jp: 'パニックマジック'
@@ -2469,6 +2657,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Transference Flash',
                                     jp: 'トランスフラッシュ'
@@ -2480,6 +2669,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 1,
                                 name: {
                                     en: 'Flux',
                                     jp: 'フラックス'
@@ -2495,6 +2685,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Mana Barrier',
                                     jp: 'マナバリア'
@@ -2506,6 +2697,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Shock Treatment',
                                     jp: 'ショック療法'
@@ -2517,6 +2709,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 1,
                                 name: {
                                     en: 'Lightning Insulation',
                                     jp: '絶縁'
@@ -2532,6 +2725,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 1,
                                 name: {
                                     en: 'Supercharged',
                                     jp: 'スーパーチャージ'
@@ -2548,6 +2742,7 @@ var characters = [
         ]
     },
     {
+        directory: 'nim',
         name: {
             en: 'Nim the Cleaner',
             jp: 'ニム'
@@ -2559,6 +2754,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Elemental Resistance',
                                     jp: '属性耐性'
@@ -2570,6 +2766,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Thick-Skinned',
                                     jp: '厚い皮膚'
@@ -2585,6 +2782,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Viridity',
                                     jp: '生命力'
@@ -2596,6 +2794,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Jinx',
                                     jp: 'ジンクス'
@@ -2611,6 +2810,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Transference',
                                     jp: '転換'
@@ -2622,6 +2822,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Battlecleaner',
                                     jp: '戦闘の掃除屋'
@@ -2633,6 +2834,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 1,
                                 name: {
                                     en: 'Vigour',
                                     jp: '活力'
@@ -2648,6 +2850,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Spellbook',
                                     jp: '魔法書'
@@ -2659,6 +2862,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Chastise',
                                     jp: '懲罰'
@@ -2674,6 +2878,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 1,
                                 name: {
                                     en: 'Squeaky Clean',
                                     jp: 'ピカピカ仕上げ'
@@ -2693,6 +2898,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Spellcraft',
                                     jp: '魔術精製'
@@ -2704,6 +2910,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Toe to Toe',
                                     jp: '真っ向勝負'
@@ -2719,6 +2926,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Channeler',
                                     jp: 'チャネラー'
@@ -2730,6 +2938,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Spellslinger',
                                     jp: 'スペルリンガー'
@@ -2745,6 +2954,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Homework',
                                     jp: '宿題'
@@ -2756,6 +2966,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 1,
                                 name: {
                                     en: 'Furious Sweeping',
                                     jp: '怒りのほうき'
@@ -2767,6 +2978,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Steamed Up',
                                     jp: '怒気'
@@ -2782,6 +2994,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Spirited',
                                     jp: '渾身'
@@ -2793,6 +3006,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Turmoil',
                                     jp: '混乱'
@@ -2808,6 +3022,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 1,
                                 name: {
                                     en: 'Cleansing Transference',
                                     jp: '昇華'
@@ -2827,6 +3042,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Liveliness',
                                     jp: '活気'
@@ -2838,6 +3054,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Ponderance',
                                     jp: '重み'
@@ -2853,6 +3070,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Physical Education',
                                     jp: '物理の勉強'
@@ -2864,6 +3082,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Elemental Wards',
                                     jp: '属性の加護'
@@ -2879,6 +3098,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Underhanded',
                                     jp: '悪知恵'
@@ -2890,6 +3110,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Sheltering',
                                     jp: '保護'
@@ -2901,6 +3122,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Rising Spirits',
                                     jp: 'ライジングスピリッツ'
@@ -2916,6 +3138,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Pressure Points',
                                     jp: 'ツボ'
@@ -2927,6 +3150,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Cleaning Day',
                                     jp: '大掃除'
@@ -2938,6 +3162,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Mask of Protection',
                                     jp: '防護マスク'
@@ -2953,6 +3178,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 1,
                                 name: {
                                     en: 'The Cleaner',
                                     jp: '掃除屋'
@@ -2969,6 +3195,7 @@ var characters = [
         ]
     },
     {
+        directory: 'amadeus',
         name: {
             en: 'Amadeus the Wizard',
             jp: 'アマデウス'
@@ -2980,6 +3207,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Spellcraft',
                                     jp: '魔術精製'
@@ -2991,6 +3219,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Spirited',
                                     jp: '渾身'
@@ -3002,6 +3231,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Thick-Skinned',
                                     jp: '厚い皮膚'
@@ -3017,6 +3247,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Box Expert',
                                     jp: '箱のエキスパート'
@@ -3028,6 +3259,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Composure',
                                     jp: '冷静'
@@ -3039,6 +3271,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Rising Spirits',
                                     jp: 'ライジングスピリッツ'
@@ -3054,6 +3287,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Confrontation',
                                     jp: '敵対'
@@ -3065,6 +3299,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 1,
                                 name: {
                                     en: 'Vitality',
                                     jp: '生命力'
@@ -3080,6 +3315,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Elemental Resistance',
                                     jp: '属性耐性'
@@ -3091,6 +3327,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Bravery',
                                     jp: '勇敢'
@@ -3106,6 +3343,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 1,
                                 name: {
                                     en: 'More Box Magic',
                                     jp: '箱魔法増量'
@@ -3125,6 +3363,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Hindrances',
                                     jp: '妨害'
@@ -3136,6 +3375,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Jinx',
                                     jp: 'ジンクス'
@@ -3151,6 +3391,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Channeler',
                                     jp: 'チャネラー'
@@ -3162,6 +3403,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Upheaval',
                                     jp: '大騒ぎ'
@@ -3173,6 +3415,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Spellslinger',
                                     jp: 'スペルスリンガー'
@@ -3188,6 +3431,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Homework',
                                     jp: '宿題'
@@ -3199,6 +3443,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Brainstorm',
                                     jp: 'ブレインストーミング'
@@ -3214,6 +3459,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Thoughtful Criticism',
                                     jp: '批評'
@@ -3225,6 +3471,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Greater Hubris',
                                     jp: '大きな思い上がり'
@@ -3240,6 +3487,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 1,
                                 name: {
                                     en: 'Exploding Box',
                                     jp: '爆発の箱'
@@ -3259,6 +3507,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Viridity',
                                     jp: '生命力'
@@ -3270,6 +3519,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Liveliness',
                                     jp: '活気'
@@ -3285,6 +3535,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Resurrection Proficiency',
                                     jp: '蘇生の達人'
@@ -3296,6 +3547,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Elusion',
                                     jp: '回避'
@@ -3311,6 +3563,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Transference',
                                     jp: '転換'
@@ -3322,6 +3575,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Physical Education',
                                     jp: '物理の勉強'
@@ -3333,6 +3587,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Dashing Hero',
                                     jp: '熱血ヒーロー'
@@ -3348,6 +3603,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Reinvigorate',
                                     jp: '躍動'
@@ -3359,6 +3615,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Clever Retort',
                                     jp: '反駁'
@@ -3374,6 +3631,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 1,
                                 name: {
                                     en: 'Box of Benevolence',
                                     jp: '慈善の箱'
@@ -3390,6 +3648,7 @@ var characters = [
         ]
     },
     {
+        directory: 'selius',
         name: {
             en: 'Selius Heatherwood',
             jp: 'セリウス'
@@ -3401,6 +3660,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Physical Education',
                                     jp: '身体学'
@@ -3412,6 +3672,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Hindrances',
                                     jp: 'ヒンドランス'
@@ -3427,6 +3688,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Rush',
                                     jp: 'ラッシュ'
@@ -3438,6 +3700,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Sleep Paralysis',
                                     jp: '睡眠麻痺'
@@ -3449,6 +3712,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Mana Flow',
                                     jp: 'マナフロー'
@@ -3464,6 +3728,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Temper Flare',
                                     jp: 'テンパーフレア'
@@ -3475,6 +3740,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Liveliness',
                                     jp: '活気'
@@ -3490,6 +3756,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Streams of Magic',
                                     jp: '魔法の奔流'
@@ -3501,6 +3768,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 1,
                                 name: {
                                     en: 'Defiance',
                                     jp: 'デファイアンス'
@@ -3512,6 +3780,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 1,
                                 name: {
                                     en: 'Obstinance',
                                     jp: '執拗'
@@ -3527,6 +3796,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 1,
                                 name: {
                                     en: 'The Prince\'s Shadow',
                                     jp: '王子の闇'
@@ -3546,6 +3816,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Friendly Shadows',
                                     jp: 'シャドウフレンド'
@@ -3561,6 +3832,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Light',
                                     jp: '光'
@@ -3572,6 +3844,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Foreboding Presence',
                                     jp: '凶兆'
@@ -3583,6 +3856,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Aura of Dread',
                                     jp: '恐怖のオーラ'
@@ -3598,6 +3872,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Darkness',
                                     jp: 'ダークネス'
@@ -3609,6 +3884,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Potency',
                                     jp: '潜在力'
@@ -3620,6 +3896,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Heatherwood Ancestry',
                                     jp: 'ヘザーウッド・アンセストリー'
@@ -3635,6 +3912,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Penumbra',
                                     jp: '半影'
@@ -3646,6 +3924,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 1,
                                 name: {
                                     en: 'Solace in Shade',
                                     jp: '闇の慰撫'
@@ -3657,6 +3936,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Casting Shadows',
                                     jp: 'キャスティング・シャドウ'
@@ -3672,6 +3952,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 1,
                                 name: {
                                     en: 'Ravenous Friends',
                                     jp: '強欲な友'
@@ -3691,6 +3972,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Avoidance',
                                     jp: 'アヴォイダンス'
@@ -3702,6 +3984,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Weariness',
                                     jp: 'ウィアリネス'
@@ -3717,6 +4000,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Forbidden Knowledge',
                                     jp: '禁断の知識'
@@ -3728,6 +4012,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Nightmare Fuel',
                                     jp: '悪夢の焚物'
@@ -3743,6 +4028,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Hidden Spark',
                                     jp: 'ヒドゥンスパーク'
@@ -3754,6 +4040,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 5,
                                 name: {
                                     en: 'Heirloom Staff',
                                     jp: '伝家の宝杖'
@@ -3769,6 +4056,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 1,
+                                max: 5,
                                 name: {
                                     en: 'Despairing Hope',
                                     jp: '絶望的な希望'
@@ -3780,6 +4068,7 @@ var characters = [
                             },
                             {
                                 slot: 2,
+                                max: 5,
                                 name: {
                                     en: 'Shivers',
                                     jp: 'シバーズ'
@@ -3791,6 +4080,7 @@ var characters = [
                             },
                             {
                                 slot: 3,
+                                max: 1,
                                 name: {
                                     en: 'Reprisal',
                                     jp: 'リプライサル'
@@ -3806,6 +4096,7 @@ var characters = [
                         slots: [
                             {
                                 slot: 2,
+                                max: 1,
                                 name: {
                                     en: 'Solemn Resolve',
                                     jp: '厳粛なる決意'
