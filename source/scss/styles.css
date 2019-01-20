@@ -311,3 +311,16 @@ td {
     background: red;
 
 }
+
+.list {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.character-list {
+    width: 60%;
+}
+
+.skill-list {
+    width: 38%;
+}

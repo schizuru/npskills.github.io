@@ -4114,4 +4114,26 @@ var characters = [
     }
 ];
 
-
+var skills = [
+    {
+        category: [
+            {
+                name: {
+                    en: 'Spell power'
+                },
+                type: [
+                    {
+                        name: {
+                            en: 'Spell power '
+                        }
+                    },
+                    {
+                        name: {
+                            en: 'Life spell power'
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+];
