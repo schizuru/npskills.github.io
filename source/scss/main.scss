@@ -1,0 +1,35 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import 'vendor/reset.custom';
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'components/base';
+@import 'components/layout';
+@import 'components/button';
+@import 'components/collapse';
+@import 'components/icon';
+@import 'components/list';
+@import 'components/slot';
+@import 'components/table';
+@import 'components/tier';
+@import 'components/tree';
+
+.skill-name,
+.tier::before,
+.collapse,
+.skill-description,
+.data-table {
+    display: none;
+}
+
+img,
+.character-name,
+.skill-name,
+.skill-description {
+    opacity: 0;
+}
+
+.tier {
+    padding: 5px;
+}

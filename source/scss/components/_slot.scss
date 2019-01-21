@@ -1,0 +1,13 @@
+.slot {
+    width: 33.33333%;
+    text-align: center;
+    position: relative;
+    padding: 0 2px;
+}
+
+.tier-5 {
+    .slot {
+        margin: auto;
+        width: auto;
+    }
+}

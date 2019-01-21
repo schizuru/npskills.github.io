@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span,
+h1, h2, h3,
+a,
+small,
+figure,
+ol, ul, li, dl, dt, dd,
+label,
+table, tr, th, td,
+footer, header {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+footer, header {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+body {
+  font-size: 1.4rem;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.2; }
+
+a {
+  color: #0288d1; }
+  a:hover {
+    text-decoration: none; }
+
+.portrait {
+  position: absolute; }
+
+.character-name {
+  margin: 10px 30px 10px 5px; }
+
+.skill-description {
+  font-size: 1.2rem; }
+
+.button {
+  background: #aaa;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  display: block;
+  border-radius: 2px;
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+  position: absolute;
+  bottom: 5px; }
+
+.plus {
+  left: 5px; }
+
+.minus {
+  line-height: 18px;
+  right: 5px; }
+
+.collapse {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background: #aaa;
+  color: #fff;
+  text-decoration: none;
+  text-align: center; }
+
+[data-collapsed='true'] > .collapse::before {
+  content: '+'; }
+
+[data-collapsed='false'] > .collapse::before {
+  content: '-'; }
+
+.tree .collapse {
+  top: 5px;
+  border-radius: 50%; }
+
+.skill-icon {
+  background: #ccc;
+  border: 2px solid #ccc;
+  display: inline-block;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  overflow: hidden; }
+  .skill-icon img {
+    width: auto;
+    height: 100%; }
+
+.point-icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #aaa;
+  float: right; }
+  .point-icon:hover {
+    background: #ccc; }
+    .point-icon:hover ~ .point-icon {
+      background: #ccc; }
+
+.points {
+  display: inline-block;
+  margin: 5px 0; }
+
+.is-hovered[data-active-points='0'] .point-1 {
+  background: #ccc; }
+
+[data-active-points='1'] .point-1,
+[data-active-points='2'] .point-2,
+[data-active-points='2'] .point-2 ~ .point-icon,
+[data-active-points='3'] .point-3,
+[data-active-points='3'] .point-3 ~ .point-icon,
+[data-active-points='4'] .point-4,
+[data-active-points='4'] .point-4 ~ .point-icon,
+[data-active-points='5'] .point-5,
+[data-active-points='5'] .point-5 ~ .point-icon {
+  background: red; }
+
+.list li {
+  display: inline-block;
+  vertical-align: top; }
+
+.slot {
+  width: 33.33333%;
+  text-align: center;
+  position: relative;
+  padding: 0 2px; }
+
+.tier-5 .slot {
+  margin: auto;
+  width: auto; }
+
+.data-table {
+  border-collapse: collapse; }
+  .data-table th,
+  .data-table td {
+    padding: 5px;
+    border: 1px solid #aaa; }
+
+.tier {
+  display: -webkit-flex;
+  display: flex;
+  border: 1px solid #aaa;
+  padding: 30px 5px 5px;
+  margin: 5px;
+  position: relative; }
+  .tier::before {
+    position: absolute;
+    top: 5px; }
+
+.tier-1::before {
+  content: 'I'; }
+
+.tier-2::before {
+  content: 'II'; }
+
+.tier-3::before {
+  content: 'III'; }
+
+.tier-4::before {
+  content: 'IV'; }
+
+.tier-5::before {
+  content: 'V'; }
+
+.tier[data-collapsed='false'] .skill-details {
+  display: block; }
+
+.skill-trees {
+  display: -webkit-flex;
+  display: flex;
+  border: 1px solid #ccc;
+  position: relative;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.7);
+  border-bottom: 5px solid #000;
+  padding: 0 0 20px;
+  margin: 0 5px 20px; }
+
+.tree {
+  width: 33.33333%; }
+
+.skill-name,
+.tier::before,
+.collapse,
+.skill-description,
+.data-table {
+  display: none; }
+
+img,
+.character-name,
+.skill-name,
+.skill-description {
+  opacity: 0; }
+
+.tier {
+  padding: 5px; }
+
+/*# sourceMappingURL=../maps/style.css.map */
