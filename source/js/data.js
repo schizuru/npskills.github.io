@@ -20,7 +20,17 @@ var characters = [
                                 description: {
                                     en: '+1.5% spell power and +2% spell charges (max 7.5% & 10%)',
                                     jp: '魔法威力+1.5%、最大チャージ+2% (最大 7.5% & 10%)'
-                                }
+                                },
+                                calculation: [
+                                    {
+                                        index: 101,
+                                        parcent: 1.5
+                                    },
+                                    {
+                                        index: 201,
+                                        parcent: 2
+                                    }
+                                ]
                             },
                             {
                                 slot: 3,
@@ -32,7 +42,13 @@ var characters = [
                                 description: {
                                     en: '+5% faster spell regeneration (max 25%)',
                                     jp: 'リチャージ速度+5% (最大25%)'
-                                }
+                                },
+                                calculation: [
+                                    {
+                                        index: 301,
+                                        parcent: 5
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -48,7 +64,13 @@ var characters = [
                                 description: {
                                     en: '+10% melee damage (max 50%)',
                                     jp: '近接ダメージ+10% (最大+50%)'
-                                }
+                                },
+                                calculation: [
+                                    {
+                                        index: 601,
+                                        parcent: 10
+                                    }
+                                ]
                             },
                             {
                                 slot: 3,
@@ -60,7 +82,13 @@ var characters = [
                                 description: {
                                     en: '+3% Life spell power (max 15%)',
                                     jp: '生命魔法威力+3% (最大15%)'
-                                }
+                                },
+                                calculation: [
+                                    {
+                                        index: 102,
+                                        parcent: 3
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -76,7 +104,21 @@ var characters = [
                                 description: {
                                     en: '+4% Fire, Ice and Lightning resistance (max 20%)',
                                     jp: '炎・氷・雷耐性+4% (最大20%)'
-                                }
+                                },
+                                calculation: [
+                                    {
+                                        index: 401,
+                                        parcent: 4
+                                    },
+                                    {
+                                        index: 402,
+                                        parcent: 4
+                                    },
+                                    {
+                                        index: 403,
+                                        parcent: 4
+                                    }
+                                ]
                             },
                             {
                                 slot: 3,
@@ -88,7 +130,17 @@ var characters = [
                                 description: {
                                     en: '+2% spell power, +4% area spell charges (max 10% & 20%)',
                                     jp: '魔法威力+2%、範囲魔法の最大チャージ+4% (最大10% & 20%)'
-                                }
+                                },
+                                calculation: [
+                                    {
+                                        index: 101,
+                                        parcent: 2
+                                    },
+                                    {
+                                        index: 202,
+                                        parcent: 4
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -104,7 +156,17 @@ var characters = [
                                 description: {
                                     en: '+7% resistance against slowing and freezing effects and +7% shorter stun duration (max 35% & 35%)',
                                     jp: 'スロウ・凍結耐性+7%、スタンの効果時間短縮+7% (最大35% & 35%)'
-                                }
+                                },
+                                calculation: [
+                                    {
+                                        index: 406,
+                                        parcent: 7
+                                    },
+                                    {
+                                        index: 407,
+                                        parcent: 7
+                                    }
+                                ]
                             },
                             {
                                 slot: 2,
@@ -116,7 +178,13 @@ var characters = [
                                 description: {
                                     en: '+3% spell power (max 15%)',
                                     jp: '魔法威力+3% (最大15%)'
-                                }
+                                },
+                                calculation: [
+                                    {
+                                        index: 101,
+                                        parcent: 3
+                                    }
+                                ]
                             },
                             {
                                 slot: 3,
@@ -128,7 +196,13 @@ var characters = [
                                 description: {
                                     en: '+5% critical hit chance',
                                     jp: 'クリティカル発生率+5%'
-                                }
+                                },
+                                calculation: [
+                                    {
+                                        index: 901,
+                                        parcent: 5
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -144,7 +218,14 @@ var characters = [
                                 description: {
                                     en: 'Each spell cast increases spell power by +8% for 10 seconds.',
                                     jp: '各魔法の威力が10秒間、8%アップ'
-                                }
+                                },
+                                calculation: [
+                                    {
+                                        index: 700101,
+                                        parcent: 8,
+                                        duration: 10
+                                    }
+                                ]
                             }
                         ]
                     }
@@ -4107,30 +4188,6 @@ var characters = [
                                 }
                             }
                         ]
-                    }
-                ]
-            }
-        ]
-    }
-];
-
-var skills = [
-    {
-        category: [
-            {
-                name: {
-                    en: 'Spell power'
-                },
-                type: [
-                    {
-                        name: {
-                            en: 'Spell power '
-                        }
-                    },
-                    {
-                        name: {
-                            en: 'Life spell power'
-                        }
                     }
                 ]
             }

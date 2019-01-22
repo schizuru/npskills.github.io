@@ -89,8 +89,10 @@ gulp.task('jshint', function() {
 gulp.task('js', ['jshint'], function() {
     return gulp
         .src([
+                paths.js.src + 'skills.js',
                 paths.js.src + 'data.js',
                 paths.js.src + 'functions.js',
+                paths.js.src + 'ui.js',
                 paths.js.src + 'main.js'
             ])
         .pipe(plugins.sourcemaps.init())
