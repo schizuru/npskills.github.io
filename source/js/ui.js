@@ -66,6 +66,9 @@ characters.forEach(function(character) {
                     }
                 };
                 html += '<tr>';
+                html +=     '<th class="index">';
+                html +=         (i + 1) + '-' + (k + 1) + '-' + (n + 1);
+                html +=     '</th>';
                 html +=     '<th>';
                 html +=         '<h3 class="skill-name">' + skill.name.en + '</h3>';
                 html +=             '<h3 class="skill-name">' + skill.name.jp + '</h3>';
