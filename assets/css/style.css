@@ -40,7 +40,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-family: "Open Sans", sans-serif;
   line-height: 1.2; }
 
@@ -231,14 +231,19 @@ img,
   white-space: nowrap; }
 
 #js-character-list {
+  width: 60%;
   display: inline-block; }
 
-.skill-trees {
+.collapse {
   display: none; }
+
+.skill-icon {
+  height: 10px;
+  width: 10px;
+  border-radius: 0; }
 
 .container {
   display: inline-block;
-  display: none;
   width: 37%;
   vertical-align: top; }
 

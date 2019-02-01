@@ -285,6 +285,7 @@ var skills = [
         },
         types: [
             {
+                index: 1001,
                 name: {
                     en: 'Faster movement speed'
                 }

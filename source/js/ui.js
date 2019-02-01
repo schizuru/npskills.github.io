@@ -20,9 +20,15 @@ characters.forEach(function(character) {
                 var skill = {
                     slot: character.trees[i].tiers[k].slots[n].slot,
                     max: character.trees[i].tiers[k].slots[n].max,
+                    calculation: character.trees[i].tiers[k].slots[n].calculation,
                     name: character.trees[i].tiers[k].slots[n].name.en,
                     description: character.trees[i].tiers[k].slots[n].description.en
                 };
+                html +=     '<div id="'+characterName+'-'+(i+1)+'-'+(k+1)+'-'+(n+1)+'" class="js-calculate">';
+                    for (var c = 0; c < skill.calculation.length; c++) {
+                        html += '<input data-index="'+skill.calculation[c].index+'" value="'+skill.calculation[c].parcent+'" type="hidden">';
+                    }
+                html +=     '</div>';
                 var imagePath = directory + 'icons/tree' + (i+1) + '-tier' + (k+1) + '-slot' + skill.slot + '.png';
                 html +=     '<div class="slot slot-' + skill.slot + ' js-slot" data-points="0">';
                 html +=         '<h3 class="skill-name">' + skill.name + '</h3>';
@@ -33,7 +39,9 @@ characters.forEach(function(character) {
                 html +=         '<div class="points">';
                     var index = 5;
                     for (var j = 0; j < skill.max; j++) {
-                        html +=     '<a href="#" class="icon point-icon point-' + index + ' js-point-icon" data-index="' + index + '"></a>';
+                        html +=     '<a href="#" class="icon point-icon point-' + index + ' js-point-icon" data-point="' + index + '">';
+
+                        html +=     '</a>';
                         index--;
                     }
                 // html +=             '<a href="#" class="button plus">+</a>';
@@ -50,6 +58,7 @@ characters.forEach(function(character) {
         html +=     '</div>';
     }
     html +=     '</div>';
+
 
     html +=     '<table class="data-table">';
     for (var i = 0; i < character.trees.length; i++) {
@@ -90,7 +99,7 @@ html = '';
 skills.forEach(function(skill) {
     for(var i = 0; i < skill.types.length; i++) {
     html += '<tr>';
-        html += '<td>' + skill.types[i].index + '</td>';
+        html += '<td id="'+skill.types[i].index+'">' + skill.types[i].index + '</td>';
         html += '<td>';
         html += '</td>';
         html += '<td>';

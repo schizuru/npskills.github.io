@@ -26,6 +26,7 @@
 img {
     display: none;
 }
+
 img,
 .index,
 .character-name,
@@ -47,22 +48,29 @@ img,
 }
 
 #js-character-list {
-    // width: 60%;
+    width: 60%;
     display: inline-block;
 }
 
 .skill-trees {
+    // display: none;
+}
+
+.collapse {
     display: none;
+}
+
+.skill-icon {
+    height: 10px;
+    width: 10px;
+    border-radius: 0;
 }
 
 .container {
     display: inline-block;
-    display: none;
     width: 37%;
     vertical-align: top;
 }
-
-
 
 .wrapper {
     // display: none;
@@ -94,4 +102,3 @@ img,
 .test2 {
     text-align: center;
 }
-
