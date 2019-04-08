@@ -8,25 +8,42 @@
             {
                "jp": "炎",
                "en": "Fire",
-               "cornelius": 20
+               "cornelius": 30
             },
             {
                "jp": "氷",
                "en": "Ice",
-               "cornelius": 20
+               "cornelius": 30
             },
             {
                "jp": "雷",
                "en": "Lightning",
-               "cornelius": 20
+               "cornelius": 30
             },
             {
                "jp": "死",
-               "en": "Death"
+               "en": "Death",
+               "cornelius": 10
             },
             {
                "jp": "ダメージ",
-               "en": "Damage"
+               "en": "Damage",
+               "cornelius": 10
+            },
+            {
+               "jp": "立ち止まっている時のダメージ耐性",
+               "en": "",
+               "cornelius": 20
+            },
+            {
+               "jp": "移動中のダメージ耐性",
+               "en": "",
+               "cornelius": 10
+            },
+            {
+               "jp": "魔法発動時に2秒間、ダメージ耐性",
+               "en": "",
+               "cornelius": 10
             }
         ]
     },
@@ -39,17 +56,17 @@
             {
                "jp": "スロウ",
                "en": "Slowing",
-               "cornelius": 35
+               "cornelius": 60
             },
             {
                "jp": "凍",
                "en": "Freezing",
-               "cornelius": 35
+               "cornelius": 60
             },
             {
                "jp": "スタン",
                "en": "Stun duretion",
-               "cornelius": -35
+               "cornelius": -60
             }
         ]
     },
@@ -112,7 +129,7 @@
             {
                "jp": "チャネリング魔法",
                "en": "Channeled spells",
-               "cornelius": 0
+               "cornelius": "67.5 - 92.5"
             },
             {
                "jp": "魔弾",
@@ -140,7 +157,8 @@
             },
             {
                "jp": "ダメージ",
-               "en": ""
+               "en": "",
+               "cornelius": 25
             }
         ]
     },
@@ -172,6 +190,11 @@
                "jp": "リチャージ速度",
                "en": "Regeneration",
                "cornelius": 50
+            },
+            {
+               "jp": "リチャージ速度 対象撃破後2秒間",
+               "en": "Regeneration",
+               "cornelius": 175
             }
         ]
     },
@@ -185,6 +208,55 @@
                "jp": "近接ダメージ",
                "en": "Melee damage",
                "cornelius": 50
+            }
+        ]
+    },
+    {
+        "category": {
+            "jp": "回復",
+            "en": ""
+        },
+        "list": [
+            {
+               "jp": "対象撃破後、10秒間HPが10回復",
+               "en": "Melee damage",
+               "cornelius": 50
+            },
+            {
+               "jp": "与えた魔法ダメージの2%",
+               "en": "Melee damage",
+               "cornelius": 10
+            }
+        ]
+    },
+    {
+        "category": {
+            "jp": "HP",
+            "en": ""
+        },
+        "list": [
+            {
+               "jp": "最大HP",
+               "en": "",
+               "cornelius": 25
+            },
+            {
+               "jp": "自分のレベルごとに",
+               "en": "",
+               "cornelius": "150p"
+            }
+        ]
+    },
+    {
+        "category": {
+            "jp": "移動速度",
+            "en": ""
+        },
+        "list": [
+            {
+               "jp": "移動速度",
+               "en": "",
+               "cornelius": 10
             }
         ]
     }

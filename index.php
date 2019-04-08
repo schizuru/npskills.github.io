@@ -46,14 +46,11 @@ $lang = 'en';
                 <section class="character" id="<?= $character['directory'] ?>"  data-collapsed="true">
                     <h2 class="character-name"><?= $character['name'][$lang] ?></h2>
 
-                    (max)
-
-
                     <?php
                     $lang = 'jp';
                     include 'status-skills.php';
-                    include 'status-spells.php';
                     $lang = 'en';
+                    include 'status-spells.php';
                     ?>
                     <figure class="portrait"><img src="assets/img/<?= $character['directory'] ?>/<?= $character['directory'] ?>.png" alt=""></figure>
 
