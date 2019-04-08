@@ -1,0 +1,1096 @@
+[
+    {
+        "name": {
+            "jp": "カースド・メテオシャワー",
+            "en": "Cursed Meteor Shower"
+        },
+        "element": {
+            "jp": "ファイヤー",
+            "en": "Fire"
+        },
+        "type": {
+            "jp": "範囲魔法, 投てき設置",
+            "en": "Area, Throwable"
+        },
+        "description": {
+            "jp": "範囲または1体の対象に空から降る火の玉を召喚する。火の玉は対象を追尾する。効果中に対象が倒された場合は地面に光の輪が現れ、輪の中に入った者を新たな対象とする。",
+            "en": "Summon fireballs from the sky on an area or a target. The shower follows the target. If the target dies while the spell is active, a glowing ring will appear on the ground. The meteor shower is transferred to anyone entering the ring."
+        },
+        "basePower": 50,
+        "charges": 1,
+        "regen": 20
+    },
+    {
+        "name": {
+            "jp": "ファイヤーバレッジ",
+            "en": "Fire Barrage"
+        },
+        "element": {
+            "jp": "ファイヤー",
+            "en": "Fire"
+        },
+        "type": {
+            "jp": "魔弾",
+            "en": "Projectile"
+        },
+        "description": {
+            "jp": "複数のミサイルを対象範囲に放ち、炎属性ダメージを与える。",
+            "en": "Multiple missiles bombard target area, dealing Fire damage."
+        },
+        "basePower": 20,
+        "charges": 4,
+        "regen": 0.333
+    },
+    {
+        "name": {
+            "jp": "ファイヤービーム",
+            "en": "Fire Beam"
+        },
+        "element": {
+            "jp": "ファイヤー",
+            "en": "Fire"
+        },
+        "type": {
+            "jp": "チャネリング魔法",
+            "en": "Channeled"
+        },
+        "description": {
+            "jp": "炎のビームを途切れなく放つ。同じ対象に2秒以上当て続けると、与えるダメージが増加する。",
+            "en": "A continuous beam of Fire. After two seconds of continuous channeling, the target starts to suffer additional damage."
+        },
+        "basePower": 70,
+        "charges": 0,
+        "regen": 12
+    },
+    {
+        "name": {
+            "jp": "ファイヤーブラスト",
+            "en": "Fire Blast"
+        },
+        "element": {
+            "jp": "ファイヤー",
+            "en": "Fire"
+        },
+        "type": {
+            "jp": "魔弾",
+            "en": "Projectile"
+        },
+        "description": {
+            "jp": "炎属性ダメージを与える短射程の魔法。",
+            "en": "A short-range blast, deals Fire damage."
+        },
+        "basePower": 75,
+        "charges": 3,
+        "regen": 4
+    },
+    {
+        "name": {
+            "jp": "ファイヤーバレット",
+            "en": "Fire Bullets"
+        },
+        "element": {
+            "jp": "ファイヤー",
+            "en": "Fire"
+        },
+        "type": {
+            "jp": "範囲魔法, 投てき魔法",
+            "en": "Area, Projectile Throwable"
+        },
+        "description": {
+            "jp": "内外に渦を描く魔弾の輪を投げる。炎属性ダメージを与える。",
+            "en": "A throwable ring of projectiles spiral outwards and inwards, dealing Fire damage."
+        },
+        "basePower": 30,
+        "charges": 2,
+        "regen": 40
+    },
+    {
+        "name": {
+            "jp": "ファイヤー・トーテム",
+            "en": "Fire Totem"
+        },
+        "element": {
+            "jp": "ファイヤー",
+            "en": "Fire"
+        },
+        "type": {
+            "jp": "範囲魔法, 投てき設置",
+            "en": "Area, Throwable"
+        },
+        "description": {
+            "jp": "炎を吐きながら回転するトーテムを召喚する。",
+            "en": "Conjures a spinning, Fire-breathing totem."
+        },
+        "basePower": 40,
+        "charges": 1,
+        "regen": 25
+    },
+    {
+        "name": {
+            "jp": "ヒュージ・ファイヤーボール",
+            "en": "Huge Fireball"
+        },
+        "element": {
+            "jp": "ファイヤー",
+            "en": "Fire"
+        },
+        "type": {
+            "jp": "範囲魔法, 魔弾",
+            "en": "Area, Projectile"
+        },
+        "description": {
+            "jp": "ヒットと同時に爆発し、範囲内の全ての敵に炎属性ダメージを与える。",
+            "en": "Huge Fireball explodes on hit, dealing damage to all caught in the blast radius."
+        },
+        "basePower": 150,
+        "charges": 3,
+        "regen": 45
+    },
+    {
+        "name": {
+            "jp": "ファイアーロック",
+            "en": "Rock of Fire"
+        },
+        "element": {
+            "jp": "ファイヤー",
+            "en": "Fire"
+        },
+        "type": {
+            "jp": "範囲魔法, 投てき設置",
+            "en": "Area, Throwable"
+        },
+        "description": {
+            "jp": "燃え盛る岩を投げ、対象を炎上させる。",
+            "en": "basePower: 50(20)******A throwable, flaming rock that sets the target on fire."
+        },
+        "basePower": 50,
+        "charges": 2,
+        "regen": 16
+    },
+    {
+        "name": {
+            "jp": "スモール・ファイヤーボール",
+            "en": "Small Fireball"
+        },
+        "element": {
+            "jp": "ファイヤー",
+            "en": "Fire"
+        },
+        "type": {
+            "jp": "魔弾",
+            "en": "Projectile"
+        },
+        "description": {
+            "jp": "ヒットと同時に爆発し、範囲内の全ての敵に炎属性ダメージを与える。",
+            "en": "Small Fireball explodes on hit, dealing damage to all caught in the blast radius."
+        },
+        "basePower": 50,
+        "charges": 8,
+        "regen": 3.5
+    },
+    {
+        "name": {
+            "jp": "フロストクラウド",
+            "en": "Frost Cloud"
+        },
+        "element": {
+            "jp": "アイス",
+            "en": "Ice"
+        },
+        "type": {
+            "jp": "範囲魔法, 投てき設置",
+            "en": "Area, Throwable"
+        },
+        "description": {
+            "jp": "氷ダメージを与える巨大な雲。ダメージは範囲内の全員に均等に分割される。",
+            "en": "charges: 2(3)******A large cloud that deals Ice damage. The damage is split evenly between everyone in the target area."
+        },
+        "basePower": 200,
+        "charges": 2,
+        "regen": 12
+    },
+    {
+        "name": {
+            "jp": "フロストシャード",
+            "en": "Frost Shard"
+        },
+        "element": {
+            "jp": "アイス",
+            "en": "Ice"
+        },
+        "type": {
+            "jp": "魔弾",
+            "en": "Projectile"
+        },
+        "description": {
+            "jp": "単体の対象に氷属性ダメージを与えるシャードを放つ。",
+            "en": "Shoots out a shard that deals Ice damage to a single target."
+        },
+        "basePower": 50,
+        "charges": 8,
+        "regen": 4
+    },
+    {
+        "name": {
+            "jp": "フロストスプレー",
+            "en": "Frost Spray"
+        },
+        "element": {
+            "jp": "アイス",
+            "en": "Ice"
+        },
+        "type": {
+            "jp": "範囲魔法, チャネリング魔法",
+            "en": "Area, Channeled"
+        },
+        "description": {
+            "jp": "冷気を放ち、当たった者全員に氷属性のダメージを与え、スロウと凍結を付与する。",
+            "en": "A burst of Ice, dealing damage to anyone caught in its wake, slowing and freezing them."
+        },
+        "basePower": 35,
+        "charges": 0,
+        "regen": 24
+    },
+    {
+        "name": {
+            "jp": "ヘイルストーム",
+            "en": "Hailstorm"
+        },
+        "element": {
+            "jp": "アイス",
+            "en": "Ice"
+        },
+        "type": {
+            "jp": "範囲魔法, 投てき設置",
+            "en": "Area, Throwable"
+        },
+        "description": {
+            "jp": "範囲に雹を降らせる。",
+            "en": "Conjures and area of icefall."
+        },
+        "basePower": 50,
+        "charges": 1,
+        "regen": 18
+    },
+    {
+        "name": {
+            "jp": "アイスバレッジ",
+            "en": "Ice Barrage"
+        },
+        "element": {
+            "jp": "アイス",
+            "en": "Ice"
+        },
+        "type": {
+            "jp": "魔弾",
+            "en": "Projectile"
+        },
+        "description": {
+            "jp": "複数のミサイルを対象範囲に放ち、氷属性ダメージを与える。",
+            "en": "Multiple missiles bombard target area, dealing Ice damage."
+        },
+        "basePower": 20,
+        "charges": 40,
+        "regen": 0.333
+    },
+    {
+        "name": {
+            "jp": "アイスビーム",
+            "en": "Ice Beam"
+        },
+        "element": {
+            "jp": "アイス",
+            "en": "Ice"
+        },
+        "type": {
+            "jp": "チャネリング魔法",
+            "en": "Channeled"
+        },
+        "description": {
+            "jp": "氷のビームを途切れなく放つ。当て続けた場合にスロウと凍結を付与する。",
+            "en": "A continuous beam of Ice. After continuous channeling, it slows and freezes the target."
+        },
+        "basePower": 50,
+        "charges": 0,
+        "regen": 12
+    },
+    {
+        "name": {
+            "jp": "アイスバレット",
+            "en": "Ice Bullets"
+        },
+        "element": {
+            "jp": "アイス",
+            "en": "Ice"
+        },
+        "type": {
+            "jp": "範囲魔法, 投てき魔法",
+            "en": "Area, Projectile Throwable"
+        },
+        "description": {
+            "jp": "内外に渦を描く魔弾の輪を投げる。氷属性ダメージを与える。",
+            "en": "A throwable ring of projectiles spiral outwards and inwards, dealing Ice damage."
+        },
+        "basePower": 30,
+        "charges": 2,
+        "regen": 40
+    },
+    {
+        "name": {
+            "jp": "アイス・ノヴァ",
+            "en": "Ice Nova"
+        },
+        "element": {
+            "jp": "アイス",
+            "en": "Ice"
+        },
+        "type": {
+            "jp": "範囲魔法",
+            "en": "Area"
+        },
+        "description": {
+            "jp": "詠唱者の周囲に氷の爆風を巻き起こす。巻き込まれた者はスロウ状態となり凍結する。",
+            "en": "An Ice blastwave bursts around the caster, affecting anyone caught in its wake, slowing and freezing them."
+        },
+        "basePower": 50,
+        "charges": 4,
+        "regen": 4
+    },
+    {
+        "name": {
+            "jp": "ライトニングバレッジ",
+            "en": "Lightning Barrage"
+        },
+        "element": {
+            "jp": "ライトニング",
+            "en": "Lightning"
+        },
+        "type": {
+            "jp": "魔弾",
+            "en": "Projectile"
+        },
+        "description": {
+            "jp": "複数のミサイルを対象範囲に放ち、雷属性ダメージを与える。",
+            "en": "Multiple missiles bombard target area, dealing Lightning damage."
+        },
+        "basePower": 20,
+        "charges": 40,
+        "regen": 0.333
+    },
+    {
+        "name": {
+            "jp": "ライトニングビーム",
+            "en": "Lightning Beam"
+        },
+        "element": {
+            "jp": "ライトニング",
+            "en": "Lightning"
+        },
+        "type": {
+            "jp": "チャネリング魔法",
+            "en": "Channeled"
+        },
+        "description": {
+            "jp": "雷のビームを途切れなく放つ。対象にスタンを付与する。",
+            "en": "A continuous beam of Lightning, which stuns the target."
+        },
+        "basePower": 70,
+        "charges": 0,
+        "regen": 12
+    },
+    {
+        "name": {
+            "jp": "ライトニングボルト",
+            "en": "Lightning Bolt"
+        },
+        "element": {
+            "jp": "ライトニング",
+            "en": "Lightning"
+        },
+        "type": {
+            "jp": "魔弾",
+            "en": "Projectile"
+        },
+        "description": {
+            "jp": "雷の矢を放つ。対象に雷属性ダメージを与え、スタンを付与する。矢は近くにいる他の対象にも飛んでいく。",
+            "en": "Shoots out a Lightning bolt, dealing damage and stunning the target. Bolt also jumps to other nearby targets."
+        },
+        "basePower": 40,
+        "charges": 8,
+        "regen": 4
+    },
+    {
+        "name": {
+            "jp": "ライトニングバレット",
+            "en": "Lightning Bullets"
+        },
+        "element": {
+            "jp": "ライトニング",
+            "en": "Lightning"
+        },
+        "type": {
+            "jp": "範囲魔法, 投てき魔法",
+            "en": "Area, Projectile Throwable"
+        },
+        "description": {
+            "jp": "内外に渦を描く魔弾の輪を投げる。雷属性ダメージを与える。",
+            "en": "A throwable ring of projectiles spiral outwards and inwards, dealing Lightning damage."
+        },
+        "basePower": 30,
+        "charges": 2,
+        "regen": 40
+    },
+    {
+        "name": {
+            "jp": "ライトニングスプレー",
+            "en": "Lightning Spray"
+        },
+        "element": {
+            "jp": "ライトニング",
+            "en": "Lightning"
+        },
+        "type": {
+            "jp": "範囲魔法, チャネリング魔法",
+            "en": "Area, Channeled"
+        },
+        "description": {
+            "jp": "雷を放ち、当たった者全員にダメージを与え、スタンを付与する。",
+            "en": "A burst of Lightning, dealing damage to everyone caught in its wake, stunning them in place."
+        },
+        "basePower": 35,
+        "charges": 0,
+        "regen": 24
+    },
+    {
+        "name": {
+            "jp": "ライトニング・トーテム",
+            "en": "Lightning Totems"
+        },
+        "element": {
+            "jp": "ライトニング",
+            "en": "Lightning"
+        },
+        "type": {
+            "jp": "範囲魔法, 投てき設置",
+            "en": "Area, Throwable"
+        },
+        "description": {
+            "jp": "トーテムを2体召喚し、トーテムの間を通る対象に雷属性ダメージを与える。",
+            "en": "Conjures two totems with a lightning current between them. Anyone crossing the current suffers damage."
+        },
+        "basePower": 50,
+        "charges": 1,
+        "regen": 60
+    },
+    {
+        "name": {
+            "jp": "ライトニングウェーブ",
+            "en": "Lightning Wave"
+        },
+        "element": {
+            "jp": "ライトニング",
+            "en": "Lightning"
+        },
+        "type": {
+            "jp": "魔弾",
+            "en": "Projectile"
+        },
+        "description": {
+            "jp": "雷のカーテンを放ち、触れたもの全員に雷属性ダメージを与えてスタンを付与する。",
+            "en": "A curtain of Lightning deals damage and stuns anyone it touches."
+        },
+        "basePower": 50,
+        "charges": 3,
+        "regen": 10
+    },
+    {
+        "name": {
+            "jp": "パワーサークル",
+            "en": "Power Circle"
+        },
+        "element": {
+            "jp": "ライトニング",
+            "en": "Lightning"
+        },
+        "type": {
+            "jp": "範囲魔法",
+            "en": "Area"
+        },
+        "description": {
+            "jp": "サークル内の全員の攻撃を強化する。サークルは消滅時に爆発し、サークル内の全員に大ダメージを与える。",
+            "en": "Everyone in the circle receives a boost (+50% Bonus Spell Power) making their offensive more effective. The circle disappears with an explosion, dealing heavy damage to everyone inside."
+        },
+        "basePower": 300,
+        "charges": 1,
+        "regen": 60
+    },
+    {
+        "name": {
+            "jp": "スティッキー・パワーサークル",
+            "en": "Sticky Power Circle"
+        },
+        "element": {
+            "jp": "ライトニング",
+            "en": "Lightning"
+        },
+        "type": {
+            "jp": "範囲魔法",
+            "en": "Area"
+        },
+        "description": {
+            "jp": "自分の周囲にサークルを作り出し、サークル内の全員の攻撃を強化する。サークルは別の対象に移すことができる。消滅時に爆発して、範囲内の全員に大ダメージを与える。",
+            "en": "A circle of power emanates from the caster, giving anyone inside the area a boost to their offensive abilities (+50% Bonus Spell Power). The circle can be passed on to someone else. Eventually the circle explodes, heavily damaging everyone inside."
+        },
+        "basePower": 300,
+        "charges": 1,
+        "regen": 60
+    },
+    {
+        "name": {
+            "jp": "ザップ！",
+            "en": "Zapp!"
+        },
+        "element": {
+            "jp": "ライトニング",
+            "en": "Lightning"
+        },
+        "type": {
+            "jp": "範囲魔法, 投てき設置",
+            "en": "Area, Throwable"
+        },
+        "description": {
+            "jp": "対象1体に雷の呪いをかけ、3秒毎に周囲の全員にダメージを与える。",
+            "en": "Curses a single target with Lightning bursts, dealing damage to everyone nearby every 3 seconds."
+        },
+        "basePower": 40,
+        "charges": 200,
+        "regen": 25
+    },
+    {
+        "name": {
+            "jp": "タッチカース",
+            "en": "Touch Curse"
+        },
+        "element": {
+            "jp": "デス",
+            "en": "Death"
+        },
+        "type": {
+            "jp": "タッチ",
+            "en": "Touch"
+        },
+        "description": {
+            "jp": "対象に継続的な死属性ダメージを8秒間与える呪いをかける。ダメージは時間と共に増加する。呪いは3体の別の対象に触れて移さない限り解除できない。",
+            "en": "basePower: 1+,******Curses a single target to take continuous Death damage, which can be cured only by inflicting it to three other targets via touch."
+        },
+        "basePower": 1,
+
+        "charges": 6,
+        "regen": 12
+    },
+    {
+        "name": {
+            "jp": "スティールヒール",
+            "en": "Steal Heal"
+        },
+        "element": {
+            "jp": "デス",
+            "en": "Death"
+        },
+        "type": {
+            "jp": "魔弾",
+            "en": "Projectile"
+        },
+        "description": {
+            "jp": "死属性の魔弾が対象に呪いをかけて、10秒間、50の死属性ダメージを与え続ける。対象にダメージを与える度に、近くにいるキャラクターは与えられたダメージ分HPを回復する。",
+            "en": "A Death magic projectile curses its target to suffer 50 Death damage continuously for 10 seconds. Whenever the target takes damage, everyone nearby is healed for the same amount."
+        },
+        "basePower": 50,
+        "charges": 2,
+        "regen": 45
+    },
+    {
+        "name": {
+            "jp": "パルスヘックス",
+            "en": "Pulsating Hex"
+        },
+        "element": {
+            "jp": "デス",
+            "en": "Death"
+        },
+        "type": {
+            "jp": "範囲魔法, 投てき設置",
+            "en": "Area, Throwable"
+        },
+        "description": {
+            "jp": "波動を放つサークルを設置し、範囲内の全員に死属性ダメージを与える。サークル内にひとりでもいれば、波動が発生する度に死属性ダメージが増加する。",
+            "en": "A magical pulsating circle which deals Death magic damage in the area. As long as there is someone inside the circle, the Death damage increases with each passing pulsation."
+        },
+        "basePower": 10,
+        "charges": 1.5,
+        "regen": 15
+    },
+    {
+        "name": {
+            "jp": "ポイズンフラワー",
+            "en": "Poison Flower"
+        },
+        "element": {
+            "jp": "デス",
+            "en": "Death"
+        },
+        "type": {
+            "jp": "範囲魔法, 投てき設置",
+            "en": "Area, Throwable"
+        },
+        "description": {
+            "jp": "毒の花を投げる。花に触れると死属性魔法の波が発生し、ダメージを与える。",
+            "en": "A throwable poison flower. When touched, the flower erupts and emanates a wave of Death magic."
+        },
+        "basePower": 50,
+        "charges": 2,
+        "regen": 17
+    },
+    {
+        "name": {
+            "jp": "生と死のカーブポール",
+            "en": "Life and Death Curveball"
+        },
+        "element": {
+            "jp": "ヒール, デス",
+            "en": "Life, Death"
+        },
+        "type": {
+            "jp": "魔弾",
+            "en": "Projectile"
+        },
+        "description": {
+            "jp": "対象を回復する生命の魔弾1つと、対象にダメージを与える死属性の魔弾を2つを放つ。魔弾が対象にヒットしなかった場合は魔弾同士が衝突し、爆発する。魔弾によるヒールは一定時間、対象を回復する。",
+            "en": "basePower: 15(75-150 Explosion),******Spell consisting of a single healing Life projectile, and two Death magic projectiles. If projectiles fail to hit any target, they\"ll collide with each other and explode. The healing from the projectile elapses across time on target."
+        },
+        "basePower": 15,
+        "charges": 4,
+        "regen": 30
+    },
+    {
+        "name": {
+            "jp": "インフェクト・エクスプロージョン",
+            "en": "Infectious Explosion"
+        },
+        "element": {
+            "jp": "デス",
+            "en": "Death"
+        },
+        "type": {
+            "jp": "範囲魔法, 投てき設置",
+            "en": "Area, Throwable"
+        },
+        "description": {
+            "jp": "呪いを投げる。呪われた者は10秒間死属性ダメージを受け続ける。呪いを受けた状態で対象が倒された場合、対象は爆発し、近くにいる者に死属性ダメージを与えながら呪いを拡散する。",
+            "en": "A throwable curse. Anyone infected suffers Death damage continuously for 10 seconds. If anyone dies while cursed, they explode, dealing Death damage and spreading the curse to anyone nearby."
+        },
+        "basePower": 10,
+        "charges": 1,
+        "regen": 3
+    },
+    {
+        "name": {
+            "jp": "デスサークル",
+            "en": "Death Circle"
+        },
+        "element": {
+            "jp": "デス",
+            "en": "Death"
+        },
+        "type": {
+            "jp": "範囲魔法, 投てき設置",
+            "en": "Area, Throwable"
+        },
+        "description": {
+            "jp": "サークルを召喚し、サークル内の全員に死属性のダメージを与える。",
+            "en": "Conjures a Death circle which deals damage to everyone in it."
+        },
+        "basePower": 24,
+        "charges": 1,
+        "regen": 15
+    },
+    {
+        "name": {
+            "jp": "デスボルト",
+            "en": "Death Bolt"
+        },
+        "element": {
+            "jp": "デス",
+            "en": "Death"
+        },
+        "type": {
+            "jp": "魔弾",
+            "en": "Projectile"
+        },
+        "description": {
+            "jp": "飛ぶ距離が長いほど対象に大きな死属性ダメージを与える。",
+            "en": "basePower: 30 - 200, ******/The longer the Death Bolt flies, the more damage it deals to its target."
+        },
+        "basePower": 30,
+
+        "charges": 6,
+        "regen": 4
+    },
+    {
+        "name": {
+            "jp": "デスビーム",
+            "en": "Death Beam"
+        },
+        "element": {
+            "jp": "デス",
+            "en": "Death"
+        },
+        "type": {
+            "jp": "チャネリング魔法",
+            "en": "Channeled"
+        },
+        "description": {
+            "jp": "死属性のビームを途切れなく放つ。対象に弱体化を付与する。",
+            "en": "A continuous beam of Death magic, which also poisons the target."
+        },
+        "basePower": 70,
+        "charges": 0,
+        "regen": 12
+    },
+    {
+        "name": {
+            "jp": "デスバレッジ",
+            "en": "Death Barrage"
+        },
+        "element": {
+            "jp": "デス",
+            "en": "Death"
+        },
+        "type": {
+            "jp": "魔弾",
+            "en": "Projectile"
+        },
+        "description": {
+            "jp": "複数のミサイルを対象範囲に放ち、死属性のダメージを与える。",
+            "en": "Multiple missiles bombard target area, dealing Death damage."
+        },
+        "basePower": 30,
+        "charges": 40,
+        "regen": 0.333
+    },
+    {
+        "name": {
+            "jp": "サクリファイスボム",
+            "en": "Deadly Sacrificial Bomb"
+        },
+        "element": {
+            "jp": "デス",
+            "en": "Death"
+        },
+        "type": {
+            "jp": "範囲魔法, 投てき設置",
+            "en": "Area, Throwable"
+        },
+        "description": {
+            "jp": "着弾時に爆発する爆弾を投げる。範囲内の全員に呪いをかけ、10秒ごとに死属性ダメージを与えながら詠唱者を回復する。詠唱者も同時にダメージを受けた場合、呪いを受けた全員が回復する。",
+            "en": "A throwable bomb, explodes on impact. Everyone in its area is infected with a curse that deals Death damage for 10 seconds and heals the caster. If the caster takes damage simultaneously, everyone cursed is healed."
+        },
+        "basePower": 20,
+        "charges": 1,
+        "regen": 30
+    },
+    {
+        "name": {
+            "jp": "チェーンデス",
+            "en": "Chain Death"
+        },
+        "element": {
+            "jp": "デス",
+            "en": "Death"
+        },
+        "type": {
+            "jp": "魔弾",
+            "en": "Projectile"
+        },
+        "description": {
+            "jp": "死属性の大ダメージを与える魔弾。対象が倒されると一番近い生存中のキャラクターに飛んでいく。",
+            "en": "A projectile that deals heavy Death damage. If its target is killed, the projectile arcs to the closest living character."
+        },
+        "basePower": 180,
+        "charges": 3,
+        "regen": 35
+    },
+    {
+        "name": {
+            "jp": "デススプレー",
+            "en": "Certain Death Spray"
+        },
+        "element": {
+            "jp": "デス",
+            "en": "Death"
+        },
+        "type": {
+            "jp": "範囲魔法, チャネリング魔法",
+            "en": "Area, Channeled"
+        },
+        "description": {
+            "jp": "射程の短い死属性の霧を放つ。範囲内の全ての対象にダメージを与える。霧が消えるまでに合計400のダメージを与えられなかった場合、残りのダメージは詠唱者自身が受ける。",
+            "en": "A short-range burst that deals Death damage to anyone caught in its wake. If one continuous spray doesn\"t deal at least 400 damage, the remaining damage is dealt to the caster."
+        },
+        "basePower": 40,
+        "charges": 0,
+        "regen": 35
+    },
+    {
+        "name": {
+            "jp": "バウンシングヒール",
+            "en": "Bouncing Heal"
+        },
+        "element": {
+            "jp": "ヒール",
+            "en": "Life"
+        },
+        "type": {
+            "jp": "魔弾",
+            "en": "Projectile"
+        },
+        "description": {
+            "jp": "対象のHPを回復する。回復後、近くに別のHPの減っている対象がいる場合、そちらに向かって飛んでいく。",
+            "en": "basePower: Max HP - Current HP,******A healing spell that arcs from one injured target to another. The spell expires when there are no more injured targets nearby."
+        },
+        "basePower": 0,
+        "charges": 3,
+        "regen": 25
+    },
+    {
+        "name": {
+            "jp": "ヒールバレッジ",
+            "en": "Heal Barrage"
+        },
+        "element": {
+            "jp": "ヒール",
+            "en": "Life"
+        },
+        "type": {
+            "jp": "魔弾",
+            "en": "Projectile"
+        },
+        "description": {
+            "jp": "複数の生命魔法ミサイルを対象範囲に放つ。",
+            "en": "Multiple Life magic missiles bombard target area."
+        },
+        "basePower": 20,
+        "charges": 40,
+        "regen": 0.333
+    },
+    {
+        "name": {
+            "jp": "ヒーリングビーム",
+            "en": "Healing Beam"
+        },
+        "element": {
+            "jp": "ヒール",
+            "en": "Life"
+        },
+        "type": {
+            "jp": "チャネリング魔法",
+            "en": "Channeled"
+        },
+        "description": {
+            "jp": "ビームを途切れなく放ち、傷ついた対象を回復させる。死属性の対象にはダメージを与える。",
+            "en": "A continuous beam of Life magic. Heals injured targets, but damages Death elements."
+        },
+        "basePower": 70,
+        "charges": 0,
+        "regen": 12
+    },
+    {
+        "name": {
+            "jp": "ヒールスプレー",
+            "en": "Healing Spray"
+        },
+        "element": {
+            "jp": "ヒール",
+            "en": "Life"
+        },
+        "type": {
+            "jp": "範囲魔法, チャネリング魔法",
+            "en": "Area, Channeled"
+        },
+        "description": {
+            "jp": "射程の短い生命魔法の霧を放つ。",
+            "en": "A short-range spray of Life magic."
+        },
+        "basePower": 30,
+        "charges": 0,
+        "regen": 3.999
+    },
+    {
+        "name": {
+            "jp": "ヒュージ・ヒールボール",
+            "en": "Huge Healball"
+        },
+        "element": {
+            "jp": "ヒール",
+            "en": "Life"
+        },
+        "type": {
+            "jp": "範囲魔法, 魔弾",
+            "en": "Area, Projectile"
+        },
+        "description": {
+            "jp": "ヒットと同時に爆発する魔弾を放ち、範囲内の全員のHPを大きく回復する。",
+            "en": "Powerful Life magic projectile explodes on hit, affecting everyone in the area."
+        },
+        "basePower": 150,
+        "charges": 2,
+        "regen": 15
+    },
+    {
+        "name": {
+            "jp": "ラージ・ライフサークル",
+            "en": "Large Life Circle"
+        },
+        "element": {
+            "jp": "ヒール",
+            "en": "Life"
+        },
+        "type": {
+            "jp": "範囲魔法, 投てき設置",
+            "en": "Area, Throwable"
+        },
+        "description": {
+            "jp": "大きなサークルを投げて設置する。サークルは合計で500のHPを回復でき、全て消費すると消滅する。",
+            "en": "A large, throwable Life spell. The ring heals 500 points and expires when used up."
+        },
+        "basePower": 500,
+        "charges": 1,
+        "regen": 80
+    },
+    {
+        "name": {
+            "jp": "ライフバレット",
+            "en": "Life Bullets"
+        },
+        "element": {
+            "jp": "ヒール",
+            "en": "Life"
+        },
+        "type": {
+            "jp": "範囲魔法, 投てき魔法",
+            "en": "Area, Projectile Throwable"
+        },
+        "description": {
+            "jp": "内外に渦を描く生命魔法の魔弾の輪を投げる。",
+            "en": "A throwable ring of Life magic projectiles spiral outwards and inwards."
+        },
+        "basePower": 40,
+        "charges": 2,
+        "regen": 40
+    },
+    {
+        "name": {
+            "jp": "スモール・ライフサークル",
+            "en": "Small Life Circle"
+        },
+        "element": {
+            "jp": "ヒール",
+            "en": "Life"
+        },
+        "type": {
+            "jp": "範囲魔法",
+            "en": "Area"
+        },
+        "description": {
+            "jp": "短時間維持する小さなサークルを自信の足下に設置する。サークル内にいる全ての対象を回復する。",
+            "en": "A small Life circle is summoned by the caster for a short time. All targets in the circle are affected."
+        },
+        "basePower": 20,
+        "charges": 3,
+        "regen": 30
+    },
+    {
+        "name": {
+            "jp": "タッチヒール",
+            "en": "Touch Heal"
+        },
+        "element": {
+            "jp": "ヒール",
+            "en": "Life"
+        },
+        "type": {
+            "jp": "タッチ",
+            "en": "Touch"
+        },
+        "description": {
+            "jp": "自分の手で触れられる範囲内の全ての対象に、10秒間HPを回復し続ける魔法をかける。",
+            "en": "Casts a Life spell that lasts for 10 seconds. Spreads to all targets within touching distance."
+        },
+        "basePower": 30,
+        "charges": 1,
+        "regen": 15
+    },
+    {
+        "name": {
+            "jp": "スチームビーム",
+            "en": "Steam Beam"
+        },
+        "element": {
+            "jp": "スチーム",
+            "en": "Steam"
+        },
+        "type": {
+            "jp": "チャネリング魔法",
+            "en": "Channeled"
+        },
+        "description": {
+            "jp": "蒸気のビームを途切れなく放つ。落書きを落とすのにも使える。",
+            "en": "A continuous beam of Steam. Can be used to tidy up marks of vandalism."
+        },
+        "basePower": 70,
+        "charges": 0,
+        "regen": 12
+    },
+    {
+        "name": {
+            "jp": "アマデウスの箱",
+            "en": "Amadeus\"s Box"
+        },
+        "element": {
+            "jp": "物理",
+            "en": "Physical"
+        },
+        "type": {
+            "jp": "投てき魔法",
+            "en": "Throwable"
+        },
+        "description": {
+            "jp": "魔法の箱を召喚し、対象に落とすことで物理属性の大ダメージを与える。上に立つと壊れる。",
+            "en": "Conjures a magical box that deals a heavy physical damage when dropped on a target. Falls apart when stood upon."
+        },
+        "basePower": 300,
+        "charges": 1,
+        "regen": 60
+    },
+    {
+        "name": {
+            "jp": "ピアーシング・シャドウ",
+            "en": "Piercing Shadow"
+        },
+        "element": {
+            "jp": "影",
+            "en": "Shadow"
+        },
+        "type": {
+            "jp": "範囲魔法",
+            "en": "Beam"
+        },
+        "description": {
+            "jp": "全対象を貫いてダメージを与える影魔法の奔流。凍結効果のある中程度のダメージを与える。1.7秒間、当て続けると最大攻撃力までチャージする。",
+            "en": "basePower: 20-70******A stream of shadow magic which pierces all targets, freezing and inflicting moderate damage. Charges to full power when channeled for 1.7 seconds."
+        },
+        "basePower": 20,
+        "charges": 1,
+        "regen": 13.2
+    }
+]

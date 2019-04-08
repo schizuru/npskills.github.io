@@ -16,12 +16,12 @@
                         <?=  $tree_index ?>_<?=  $tier_index ?>_<?=  $skill['slot'] ?>
                     </th>
                     <th>
-                        <h3 class="skill-name"><?= $skill['name']['en'] ?></h3>
+                        <h3 class="skill-name"><?= $skill['name'][$lang] ?></h3>
                     </th>
                     <td></td>
                     <td><?= $skill['max'] ?></td>
                     <td>
-                        <div class="skill-description"><?= $skill['description']['en'] ?></div>
+                        <div class="skill-description"><?= $skill['description'][$lang] ?></div>
                     </td>
                 </tr>
             <?php endforeach ?>

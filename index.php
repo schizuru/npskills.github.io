@@ -1,6 +1,12 @@
 <?php
 $string = file_get_contents('source/json/characters.json');
 $characters = json_decode($string, true);
+$string = file_get_contents('source/json/spells.json');
+$spells = json_decode($string, true);
+$string = file_get_contents('source/json/skills.json');
+$skills = json_decode($string, true);
+$lang = 'en';
+// $lang = 'jp';
 ?>
 <!doctype html>
 <html lang="en">
@@ -18,37 +24,56 @@ $characters = json_decode($string, true);
     </label>
     <div>Remaining Points: 60</div>
 
-    <ul class="tabs">
+    <ul class="tabs js-tabs">
         <?php $index = 1; ?>
         <?php foreach ($characters as $character): ?>
-            <?php $is_active = ($index == 1) ? 'is-active' : ''; ?>
-            <li class="<?= $is_active ?>"><a href="#"><?= $character['directory'] ?></a></li>
+            <?php $is_active = ($index == 1) ? ' is-active' : ''; ?>
+            <li class="tab<?= $is_active ?>" data-target="#pane-<?= $character['directory'] ?>">
+                <?php
+                $character_name = ($lang == 'en') ? $character['directory'] : $character['name'][$lang];
+                ?>
+                <a href="#"><?= $character_name ?></a>
+            </li>
             <?php $index++; ?>
         <?php endforeach ?>
     </ul>
-    <?php $index = 1; ?>
-    <?php foreach ($characters as $character): ?>
-        <?php $is_active = ($index == 1) ? ' is-active' : ''; ?>
-        <div class="tab-content">
-            <div class="tab-pane<?= $is_active ?>">
+
+    <div class="tab-content">
+        <?php $index = 1; ?>
+        <?php foreach ($characters as $character): ?>
+            <?php $is_active = ($index == 1) ? ' is-active' : ''; ?>
+            <div class="tab-pane<?= $is_active ?>" id="pane-<?= $character['directory'] ?>">
                 <section class="character" id="<?= $character['directory'] ?>"  data-collapsed="true">
-                    <h2 class="character-name"><?= $character['name']['en'] ?></h2>
-                    <!-- <a href="#" class="collapse js-collapse" data-target-element=".character"></a> -->
+                    <h2 class="character-name"><?= $character['name'][$lang] ?></h2>
+
+                    (max)
+
+
+                    <?php
+                    $lang = 'jp';
+                    include 'status-skills.php';
+                    include 'status-spells.php';
+                    $lang = 'en';
+                    ?>
                     <figure class="portrait"><img src="assets/img/<?= $character['directory'] ?>/<?= $character['directory'] ?>.png" alt=""></figure>
 
                     <div class="container container-trees">
-                        <?php include 'skill-trees.php'; ?>
-                    </div>
-                    <div class="container container-table">
-                        <?php include 'skill-table.php'; ?>
+                        <?php include 'skill-tree-list.php'; ?>
+                    </div><!--
+                     --><div class="container container-table">
+                        <?php include 'skill-tree-table.php'; ?>
                     </div>
 
                 </section>
-            </div>
-        </div>
-        <?php $index++; ?>
-    <?php endforeach ?>
 
-    <script src="assets/js/script.js"></script>
+            </div>
+            <?php $index++; ?>
+        <?php endforeach ?>
+    </div>
+
+
+
+    <script src="source/js/vendor/jQuery.js"></script>
+    <script src="source/js/main.js"></script>
 </body>
 </html>

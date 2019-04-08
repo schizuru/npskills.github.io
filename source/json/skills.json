@@ -1,0 +1,191 @@
+[
+    {
+        "category": {
+            "jp": "属性耐性",
+            "en": "Resistance"
+        },
+        "list": [
+            {
+               "jp": "炎",
+               "en": "Fire",
+               "cornelius": 20
+            },
+            {
+               "jp": "氷",
+               "en": "Ice",
+               "cornelius": 20
+            },
+            {
+               "jp": "雷",
+               "en": "Lightning",
+               "cornelius": 20
+            },
+            {
+               "jp": "死",
+               "en": "Death"
+            },
+            {
+               "jp": "ダメージ",
+               "en": "Damage"
+            }
+        ]
+    },
+    {
+        "category": {
+            "jp": "状態異常耐性",
+            "en": "Resistance against"
+        },
+        "list": [
+            {
+               "jp": "スロウ",
+               "en": "Slowing",
+               "cornelius": 35
+            },
+            {
+               "jp": "凍",
+               "en": "Freezing",
+               "cornelius": 35
+            },
+            {
+               "jp": "スタン",
+               "en": "Stun duretion",
+               "cornelius": -35
+            }
+        ]
+    },
+    {
+        "category": {
+            "jp": "魔法威力",
+            "en": "Spell power"
+        },
+        "list": [
+            {
+               "jp": "炎",
+               "en": "Fire",
+               "cornelius": 62.5
+            },
+            {
+               "jp": "氷",
+               "en": "Ice",
+               "cornelius": 62.5
+            },
+            {
+               "jp": "雷",
+               "en": "Lightning",
+               "cornelius": 62.5
+            },
+            {
+               "jp": "死",
+               "en": "Death",
+               "cornelius": 62.5
+            },
+            {
+               "jp": "生",
+               "en": "Life",
+               "cornelius": 77.5
+            },
+            {
+               "jp": "蒸気",
+               "en": "Steam",
+               "cornelius": 62.5
+            },
+            {
+               "jp": "影",
+               "en": "Shadow",
+               "cornelius": 62.5
+            },
+            {
+               "jp": "物理",
+               "en": "Physical",
+               "cornelius": 62.5
+            },
+            {
+               "jp": "対象撃破後10秒間",
+               "en": "Channeled spells",
+               "cornelius": 77.5
+            },
+            {
+               "jp": "10秒間",
+               "en": "Channeled spells",
+               "cornelius": 70.5
+            },
+            {
+               "jp": "チャネリング魔法",
+               "en": "Channeled spells",
+               "cornelius": 0
+            },
+            {
+               "jp": "魔弾",
+               "en": "projectile spell",
+               "cornelius": 77.5
+            },
+            {
+               "jp": "範囲魔法",
+               "en": "Area spell",
+               "cornelius": 77.5
+            }
+
+        ]
+    },
+    {
+        "category": {
+            "jp": "クリティカル",
+            "en": "Critical"
+        },
+        "list": [
+            {
+               "jp": "発生率",
+               "en": "",
+               "cornelius": 25
+            },
+            {
+               "jp": "ダメージ",
+               "en": ""
+            }
+        ]
+    },
+    {
+        "category": {
+            "jp": "チャージ",
+            "en": "Charge"
+        },
+        "list": [
+            {
+               "jp": "最大チャージ",
+               "en": "Spell charges",
+               "cornelius": 10
+            },
+            {
+               "jp": "範囲魔法の最大チャージ",
+               "en": "Area spell",
+               "cornelius": 20
+            }
+        ]
+    },
+    {
+        "category": {
+            "jp": "リチャージ",
+            "en": "Regeneration"
+        },
+        "list": [
+            {
+               "jp": "リチャージ速度",
+               "en": "Regeneration",
+               "cornelius": 50
+            }
+        ]
+    },
+    {
+        "category": {
+            "jp": "近接",
+            "en": "Melee"
+        },
+        "list": [
+            {
+               "jp": "近接ダメージ",
+               "en": "Melee damage",
+               "cornelius": 50
+            }
+        ]
+    }
+]

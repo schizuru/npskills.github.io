@@ -79,8 +79,9 @@ gulp.task('jshint', function() {
     console.log('============================================================================== JS');
     gulp
         .src([
-                paths.js.src + '**',
-                '!' + paths.js.src + 'vendor/**'
+                // paths.js.src + '**',
+                // '!' + paths.js.src + 'vendor/**'
+                paths.js.src + 'main.js'
             ])
         .pipe(plugins.jshint())
         .pipe(plugins.jshint.reporter('jshint-stylish'));
@@ -99,7 +100,7 @@ gulp.task('js', ['jshint'], function() {
 });
 
 gulp.task('watch', function() {
-    gulp.watch(paths.js.src + '*.js', ['js']);
+    gulp.watch(paths.js.src + 'main.js', ['js']);
     gulp.watch(paths.css.src + '**', ['css']);
     gulp.watch(paths.img.src + '**', ['img']);
 });

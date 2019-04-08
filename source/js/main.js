@@ -1,3 +1,18 @@
+var className = {
+    active: 'is-active'
+};
+
+$(document).ready(function() {
+    $('.js-tabs').on('click', '.tab', function() {
+        var tab = $(this),
+            targetElement = tab.data('target');
+        tab.siblings().removeClass(className.active);
+        $('.tab-pane').removeClass(className.active);
+        tab.addClass('is-active');
+        $(targetElement).addClass(className.active);
+        console.log(targetElement);
+    });
+});
 
 
 // var className = 'is-hovered';

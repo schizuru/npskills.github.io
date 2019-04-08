@@ -7,8 +7,8 @@
 
     a {
         display: block;
-        padding: 5px 10px;
-        width: 7em;
+        padding: 5px;
+        width: 10em;
         text-align: center;
     }
 
@@ -19,7 +19,7 @@
 
 .tab-pane {
     border: 1px solid $color-border;
-    padding: 5px 10px;
+    padding: 10px;
     display: none;
 
     &.is-active {

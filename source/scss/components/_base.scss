@@ -13,6 +13,7 @@ body {
     font-size: $font-size-base;
     font-family: $font-family-default;
     line-height: 1.2;
+    padding: 10px;
 }
 
 a {
@@ -29,9 +30,10 @@ a {
 }
 
 .container-trees {
-    width: 57%;
+    width: 65%;
 }
 
 .container-table {
-    width: 40%;
+    width: 35%;
+    padding-left: 15px;
 }
