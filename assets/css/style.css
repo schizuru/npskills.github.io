@@ -49,6 +49,16 @@ a {
   a:hover {
     text-decoration: none; }
 
+.container {
+  display: inline-block;
+  vertical-align: top; }
+
+.container-trees {
+  width: 57%; }
+
+.container-table {
+  width: 40%; }
+
 .portrait {
   position: absolute; }
 
@@ -211,8 +221,29 @@ a {
 .tree {
   width: 33.33333%; }
 
-img {
+.tabs li {
+  display: inline-block;
+  border: 1px solid #aaa;
+  text-transform: capitalize; }
+
+.tabs a {
+  display: block;
+  padding: 5px 10px;
+  width: 7em;
+  text-align: center; }
+
+.tabs .is-active {
+  background: #f2f2f2; }
+
+.tab-pane {
+  border: 1px solid #aaa;
+  padding: 5px 10px;
   display: none; }
+  .tab-pane.is-active {
+    display: block; }
+
+img {
+  opacity: .1; }
 
 img,
 .index,
@@ -240,12 +271,7 @@ img,
 .skill-icon {
   height: 10px;
   width: 10px;
-  border-radius: 0; }
-
-.container {
-  display: inline-block;
-  width: 37%;
-  vertical-align: top; }
+  border-radius: 50%; }
 
 .test {
   display: none;

@@ -76,15 +76,17 @@ characters.forEach(function(character) {
                 };
                 html += '<tr>';
                 html +=     '<th class="index">';
-                html +=         (i + 1) + '-' + (k + 1) + '-' + (n + 1);
+                html +=         (i + 1) + '_' + (k + 1) + '_' + (n + 1);
                 html +=     '</th>';
                 html +=     '<th>';
-                html +=         '<h3 class="skill-name">' + skill.name.en + '</h3>';
                 html +=             '<h3 class="skill-name">' + skill.name.jp + '</h3>';
+                html +=         '<h3 class="skill-name">' + skill.name.en + '</h3>';
                 html +=     '</th>';
+                html +=     '<td>' + character.trees[i].tiers[k].slots[n].max + '</td>';
+                html +=     '<td></td>';
                 html +=     '<td>';
-                html +=         '<div class="skill-description">' + skill.description.en + '</div>';
                 html +=         '<div class="skill-description">' + skill.description.jp + '</div>';
+                html +=         '<div class="skill-description">' + skill.description.en + '</div>';
                 html +=     '</td>';
                 html += '</tr>';
             }

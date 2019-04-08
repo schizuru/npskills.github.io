@@ -14,7 +14,7 @@ var skills = [
     },
     {
         categoryName: {
-            en: 'Spell power'
+            en: 'Spell Power'
         },
         types: [
             {
@@ -26,7 +26,7 @@ var skills = [
             {
                 index: 102,
                 name: {
-                    en: 'Life spell power'
+                    en: 'Life spell'
                 }
             },
             {

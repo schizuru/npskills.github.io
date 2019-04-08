@@ -1,0 +1,28 @@
+.tabs {
+    li {
+        display: inline-block;
+        border: 1px solid $color-border;
+        text-transform: capitalize;
+    }
+
+    a {
+        display: block;
+        padding: 5px 10px;
+        width: 7em;
+        text-align: center;
+    }
+
+    .is-active {
+        background: $background-gray-light;
+    }
+}
+
+.tab-pane {
+    border: 1px solid $color-border;
+    padding: 5px 10px;
+    display: none;
+
+    &.is-active {
+        display: block;
+    }
+}
