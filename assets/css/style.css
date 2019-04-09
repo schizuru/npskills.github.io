@@ -478,4 +478,12 @@ a {
 .portrait {
   display: none; }
 
+.skill-trees .skill-description,
+.skill-trees .skill-name,
+.skill-trees img {
+  visibility: hidden; }
+
+.data-table {
+  display: none; }
+
 /*# sourceMappingURL=../maps/style.css.map */

@@ -4,7 +4,14 @@
 }
 
 .skill-trees {
-    .skill-description {
+    .skill-description,
+    .skill-name,
+    img {
         // display: none;
+        visibility: hidden;
     }
+}
+
+.data-table {
+    display: none;
 }
