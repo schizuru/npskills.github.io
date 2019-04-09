@@ -3,6 +3,16 @@
     text-align: center;
     position: relative;
     padding: 0 2px;
+
+    .skill-name {
+        min-height: 2.4em;
+    }
+
+    .skill-description {
+        min-height: 7em;
+        max-height: 7em;
+        overflow: auto;
+    }
 }
 
 .tier-5 {
@@ -11,3 +21,5 @@
         width: auto;
     }
 }
+
+

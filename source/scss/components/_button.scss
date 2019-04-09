@@ -1,17 +1,31 @@
 .button {
-    background: $color-border;
+    background: $color-link;
+    color: #fff;
     // width: 20px;
     // height: 20px;
     // line-height: 20px;
     text-align: center;
-    display: block;
+    display: inline-block;
     border-radius: 2px;
+    border: 0;
+    outline: none;
     // font-size: 2rem;
-    color: #fff;
     text-decoration: none;
     // position: absolute;
     // bottom: 5px;
     cursor: pointer;
+
+    &:hover {
+        background: #ccc;
+    }
+
+    &:active {
+        background: red;
+    }
+}
+
+.button-reset {
+    margin-left: 10px;
 }
 
 .plus {

@@ -28,7 +28,7 @@ $lang = 'en';
         <?php $index = 1; ?>
         <?php foreach ($characters as $character): ?>
             <?php $is_selected = ($index == 1) ? ' is-selected' : ''; ?>
-            <li class="tab<?= $is_selected ?>" data-target="#pane-<?= $character['directory'] ?>">
+            <li class="tab<?= $is_selected ?>" data-target="<?= $character['directory'] ?>">
                 <?php
                 $character_name = ($lang == 'en') ? $character['directory'] : $character['name'][$lang];
                 ?>
@@ -53,7 +53,7 @@ $lang = 'en';
                     <div class="points-control">
                         <label>
                             Current Level:
-                            <input class="user-input js-level" type="text" value="60">
+                            <input class="user-input js-level" type="phone" value="60" maxlength="2">
                         </label>
                     </div>
 

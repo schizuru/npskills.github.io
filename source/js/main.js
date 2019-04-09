@@ -1,4 +1,5 @@
-var className = {
+var selectedCharacter = 'cornelius',
+    className = {
     active: 'is-active',
     selected: 'is-selected'
 };
@@ -11,29 +12,63 @@ $(document).ready(function() {
 
     $('.js-tabs').on('click', '.tab', function() {
         var self = $(this),
-            targetElement = self.data('target');
+            selectedCharacter = self.data('target');
+            targetElement = '#pane-' + selectedCharacter;
         self.siblings().removeClass(className.selected);
         $('.tab-pane').removeClass(className.selected);
         self.addClass(className.selected);
         $(targetElement).addClass(className.selected);
-        console.log(targetElement);
     });
 
-    $('.js-level').on('click', function() {
-        $(this).select();
+    $('.js-level')
+        .on('click', function() {
+            $(this).select();
+        })
+        .on('keyup', function() {
+            var enteredValue = $(this).val(),
+                targetElement = $('#' + selectedCharacter + ' .js-remaining-points');
+            if (enteredValue < 61) {
+                targetElement.html(enteredValue);
+            } else {
+                targetElement.html(60);
+                $(this).val(60);
+            }
     });
 
-    $('.is-active .js-point-icon').on('click', function() {
-        var self = $(this),
-            parent = self.closest('.js-slot'),
-            currentPoints = parent.data('points'),
-            usedPoints = self.data('points');
+    $('.js-reset').on('click', function() {
+        $('#' + selectedCharacter + ' .js-remaining-points').html(60);
+        $('#' + selectedCharacter + ' .js-level').val(60);
+    });
 
-        if (currentPoints === usedPoints) {
-            parent.attr('data-points', 0).data('points', 0);
-        } else {
-            parent.attr('data-points', usedPoints).data('points', usedPoints);
-        }
+    $('.is-active')
+        .on('click', '.js-point-icon', function() {
+            var self = $(this),
+                parent = self.closest('.js-slot'),
+                currentPoints = parent.data('points'),
+                usedPoints = self.data('points'),
+                remainingPoints = $('#' + selectedCharacter + ' .js-remaining-points').html();
+
+            console.log(remainingPoints);
+            if (currentPoints === usedPoints) {
+                parent.attr('data-points', 0).data('points', 0);
+            } else {
+                parent.attr('data-points', usedPoints).data('points', usedPoints);
+            }
+
+
+        })
+        .on('click', '.js-skill-icon', function() {
+            var self = $(this),
+                parent = self.closest('.js-slot'),
+                currentPoints = parent.data('points'),
+                remainingPoints = $('#' + selectedCharacter + ' .js-remaining-points').html();
+                console.log(remainingPoints);
+            if (currentPoints < 5) {
+                parent.data('points', currentPoints + 1).attr('data-points', currentPoints + 1);
+            } else {
+                parent.attr('data-points', 0).data('points', 0);
+            }
+
     });
 
 

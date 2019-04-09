@@ -78,13 +78,22 @@ a {
   font-size: 1.2rem; }
 
 .button {
-  background: #aaa;
-  text-align: center;
-  display: block;
-  border-radius: 2px;
+  background: #0288d1;
   color: #fff;
+  text-align: center;
+  display: inline-block;
+  border-radius: 2px;
+  border: 0;
+  outline: none;
   text-decoration: none;
   cursor: pointer; }
+  .button:hover {
+    background: #ccc; }
+  .button:active {
+    background: red; }
+
+.button-reset {
+  margin-left: 10px; }
 
 .plus {
   left: 5px; }
@@ -168,6 +177,12 @@ a {
   text-align: center;
   position: relative;
   padding: 0 2px; }
+  .slot .skill-name {
+    min-height: 2.4em; }
+  .slot .skill-description {
+    min-height: 7em;
+    max-height: 7em;
+    overflow: auto; }
 
 .tier-5 .slot {
   margin: auto;
@@ -183,6 +198,8 @@ a {
 .tier {
   display: -webkit-flex;
   display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   border: 1px solid #aaa;
   padding: 30px 5px 5px;
   margin: 5px;
@@ -217,6 +234,28 @@ a {
 
 .tier[data-collapsed='false'] .skill-details {
   display: block; }
+
+#cornelius .tree-1 .tier-3 .slot-3,
+#cornelius .tree-2 .tier-3 .slot-3 {
+  position: relative; }
+  #cornelius .tree-1 .tier-3 .slot-3::after,
+  #cornelius .tree-2 .tier-3 .slot-3::after {
+    content: '';
+    display: inline-block;
+    background: #ccc;
+    width: 10px;
+    height: 190px;
+    position: absolute;
+    top: 82px;
+    left: 0;
+    right: 0;
+    margin: auto; }
+  #cornelius .tree-1 .tier-3 .slot-3 .actions,
+  #cornelius .tree-1 .tier-3 .slot-3 .skill-details,
+  #cornelius .tree-2 .tier-3 .slot-3 .actions,
+  #cornelius .tree-2 .tier-3 .slot-3 .skill-details {
+    position: relative;
+    z-index: 100; }
 
 .skill-trees {
   border: 1px solid #ccc;
@@ -272,14 +311,8 @@ a {
   border: 1px solid #aaa;
   padding: 3px 5px; }
 
-.hide {
-  display: none; }
-
 .tab img,
 .portrait {
-  display: none; }
-
-.skill-trees .skill-description {
   display: none; }
 
 /*# sourceMappingURL=../maps/style.css.map */

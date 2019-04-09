@@ -1,5 +1,6 @@
 .tier {
     @include flexbox;
+    @include justify-content(space-between);
     border: 1px solid $color-border;
     padding: 30px 5px 5px;
     margin: 5px;
@@ -52,6 +53,33 @@
     &[data-collapsed='false'] {
         .skill-details {
             display: block;
+        }
+    }
+}
+
+#cornelius {
+    .tree-1 .tier-3 .slot-3,
+    .tree-2 .tier-3 .slot-3 {
+        position: relative;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            background: #ccc;
+            width: 10px;
+            height: 190px;
+            position: absolute;
+            top: 82px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .actions,
+        .skill-details {
+            position: relative;
+            z-index: 100;
+
         }
     }
 }

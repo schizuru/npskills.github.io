@@ -1,6 +1,8 @@
 <div class="skill-trees">
-    <div>Remaining Points: <span class="js-remaining-points">60</span></div>
-    <button class="button">Reset</button>
+    <div class="remaining-points">
+        Remaining Points: <span class="js-remaining-points">60</span>
+        <button class="button button-reset js-reset">Reset</button>
+    </div>
     <div class="inner-wrapper">
         <?php $tree_index = 1; ?>
         <?php foreach ($character['trees'] as $tree): ?>
@@ -11,7 +13,6 @@
                     <div class="tier tier-<?= $tier_index ?><?= $is_active ?>" data-collapsed="true">
                         <?php foreach ($tier['slots'] as $skill): ?>
                             <div class="slot slot-<?= $skill['slot'] ?> js-slot" data-points="0">
-                                <?=  $tree_index ?>_<?=  $tier_index ?>_<?=  $skill['slot'] ?>
                                 <h3 class="skill-name"><?= $skill['name'][$lang] ?></h3>
                                 <figure class="icon skill-icon js-skill-icon">
                                     <a href="#">
@@ -20,7 +21,7 @@
                                 </figure>
                                 <div class="actions">
                                     <div class="points">
-                                        <?php for ($i=5; $i > 0; $i--) { ?>
+                                        <?php for ($i=$skill['max']; $i > 0; $i--) { ?>
                                             <a href="#" class="icon point-icon point-<?= $i ?> js-point-icon" data-points="<?= $i ?>"></a>
                                         <?php } ?>
                                     </div>
