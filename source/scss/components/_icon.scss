@@ -8,6 +8,8 @@ $icon-size: 56px;
     width: $icon-size;
     height: $icon-size;
     overflow: hidden;
+    position: relative;
+    z-index: 100;
 
     img {
         width: auto;

@@ -132,7 +132,9 @@ a {
   border-radius: 50%;
   width: 56px;
   height: 56px;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative;
+  z-index: 100; }
   .skill-icon img {
     width: auto;
     height: 100%; }
@@ -182,7 +184,8 @@ a {
   .slot .skill-description {
     min-height: 7em;
     max-height: 7em;
-    overflow: auto; }
+    overflow-y: auto;
+    overflow-x: hidden; }
 
 .tier-5 .slot {
   margin: auto;
@@ -235,28 +238,6 @@ a {
 .tier[data-collapsed='false'] .skill-details {
   display: block; }
 
-#cornelius .tree-1 .tier-3 .slot-3,
-#cornelius .tree-2 .tier-3 .slot-3 {
-  position: relative; }
-  #cornelius .tree-1 .tier-3 .slot-3::after,
-  #cornelius .tree-2 .tier-3 .slot-3::after {
-    content: '';
-    display: inline-block;
-    background: #ccc;
-    width: 10px;
-    height: 190px;
-    position: absolute;
-    top: 82px;
-    left: 0;
-    right: 0;
-    margin: auto; }
-  #cornelius .tree-1 .tier-3 .slot-3 .actions,
-  #cornelius .tree-1 .tier-3 .slot-3 .skill-details,
-  #cornelius .tree-2 .tier-3 .slot-3 .actions,
-  #cornelius .tree-2 .tier-3 .slot-3 .skill-details {
-    position: relative;
-    z-index: 100; }
-
 .skill-trees {
   border: 1px solid #ccc;
   position: relative;
@@ -269,6 +250,187 @@ a {
 
 .tree {
   width: 33.33333%; }
+
+#cornelius .tree-1 .tier-3 .slot-3::after,
+#cornelius .tree-2 .tier-3 .slot-3::after,
+#gislan .tree-1 .tier-1 .slot-3::after,
+#gislan .tree-1 .tier-3 .slot-3::after,
+#marvek .tree-2 .tier-1 .slot-3::after,
+#marvek .tree-2 .tier-3 .slot-3::after,
+#carabel .tree-1 .tier-2 .slot-3::after,
+#carabel .tree-2 .tier-2 .slot-3::after,
+#rudolfus .tree-1 .tier-1 .slot-3::after,
+#rudolfus .tree-1 .tier-3 .slot-3::after,
+#rudolfus .tree-2 .tier-2 .slot-3::after,
+#rudolfus .tree-3 .tier-2 .slot-3::after,
+#owl .tree-1 .tier-3 .slot-3::after,
+#owl .tree-2 .tier-3 .slot-3::after,
+#owl .tree-3 .tier-3 .slot-3::after,
+#owl .tree-3 .tier-1 .slot-3::after,
+#nim .tree-1 .tier-3 .slot-2::after,
+#nim .tree-1 .tier-3 .slot-3::after,
+#nim .tree-2 .tier-1 .slot-2::after,
+#nim .tree-3 .tier-1 .slot-2::after,
+#nim .tree-3 .tier-2 .slot-2::after,
+#nim .tree-3 .tier-3 .slot-2::after,
+#nim .tree-3 .tier-3 .slot-3::after,
+#amadeus .tree-1 .tier-1 .slot-2::after,
+#amadeus .tree-1 .tier-1 .slot-3::after,
+#amadeus .tree-1 .tier-2 .slot-2::after,
+#amadeus .tree-1 .tier-2 .slot-3::after,
+#amadeus .tree-2 .tier-3 .slot-1::after,
+#amadeus .tree-2 .tier-3 .slot-3::after,
+#selius .tree-1 .tier-1 .slot-1::after,
+#selius .tree-1 .tier-1 .slot-2::after,
+#selius .tree-1 .tier-3 .slot-3::after,
+#selius .tree-2 .tier-2 .slot-1::after,
+#selius .tree-2 .tier-3 .slot-1::after,
+#selius .tree-2 .tier-3 .slot-3::after,
+#selius .tree-3 .tier-3 .slot-2::after,
+#selius .tree-3 .tier-3 .slot-3::after {
+  content: '';
+  display: inline-block;
+  background: #ccc;
+  width: 10px;
+  height: 190px;
+  position: absolute;
+  top: 82px;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+#cornelius .tree-1 .tier-3 .slot-3 .actions,
+#cornelius .tree-1 .tier-3 .slot-3 .skill-details,
+#cornelius .tree-2 .tier-3 .slot-3 .actions,
+#cornelius .tree-2 .tier-3 .slot-3 .skill-details,
+#gislan .tree-1 .tier-1 .slot-3 .actions,
+#gislan .tree-1 .tier-1 .slot-3 .skill-details,
+#gislan .tree-1 .tier-3 .slot-3 .actions,
+#gislan .tree-1 .tier-3 .slot-3 .skill-details,
+#marvek .tree-2 .tier-1 .slot-3 .actions,
+#marvek .tree-2 .tier-1 .slot-3 .skill-details,
+#marvek .tree-2 .tier-3 .slot-3 .actions,
+#marvek .tree-2 .tier-3 .slot-3 .skill-details,
+#carabel .tree-1 .tier-2 .slot-3 .actions,
+#carabel .tree-1 .tier-2 .slot-3 .skill-details,
+#carabel .tree-2 .tier-2 .slot-3 .actions,
+#carabel .tree-2 .tier-2 .slot-3 .skill-details,
+#rudolfus .tree-1 .tier-1 .slot-3 .actions,
+#rudolfus .tree-1 .tier-1 .slot-3 .skill-details,
+#rudolfus .tree-1 .tier-3 .slot-3 .actions,
+#rudolfus .tree-1 .tier-3 .slot-3 .skill-details,
+#rudolfus .tree-2 .tier-2 .slot-3 .actions,
+#rudolfus .tree-2 .tier-2 .slot-3 .skill-details,
+#rudolfus .tree-3 .tier-2 .slot-3 .actions,
+#rudolfus .tree-3 .tier-2 .slot-3 .skill-details,
+#owl .tree-1 .tier-3 .slot-3 .actions,
+#owl .tree-1 .tier-3 .slot-3 .skill-details,
+#owl .tree-2 .tier-3 .slot-3 .actions,
+#owl .tree-2 .tier-3 .slot-3 .skill-details,
+#owl .tree-3 .tier-3 .slot-3 .actions,
+#owl .tree-3 .tier-3 .slot-3 .skill-details,
+#owl .tree-3 .tier-1 .slot-3 .actions,
+#owl .tree-3 .tier-1 .slot-3 .skill-details,
+#nim .tree-1 .tier-3 .slot-2 .actions,
+#nim .tree-1 .tier-3 .slot-2 .skill-details,
+#nim .tree-1 .tier-3 .slot-3 .actions,
+#nim .tree-1 .tier-3 .slot-3 .skill-details,
+#nim .tree-2 .tier-1 .slot-2 .actions,
+#nim .tree-2 .tier-1 .slot-2 .skill-details,
+#nim .tree-3 .tier-1 .slot-2 .actions,
+#nim .tree-3 .tier-1 .slot-2 .skill-details,
+#nim .tree-3 .tier-2 .slot-2 .actions,
+#nim .tree-3 .tier-2 .slot-2 .skill-details,
+#nim .tree-3 .tier-3 .slot-2 .actions,
+#nim .tree-3 .tier-3 .slot-2 .skill-details,
+#nim .tree-3 .tier-3 .slot-3 .actions,
+#nim .tree-3 .tier-3 .slot-3 .skill-details,
+#amadeus .tree-1 .tier-1 .slot-2 .actions,
+#amadeus .tree-1 .tier-1 .slot-2 .skill-details,
+#amadeus .tree-1 .tier-1 .slot-3 .actions,
+#amadeus .tree-1 .tier-1 .slot-3 .skill-details,
+#amadeus .tree-1 .tier-2 .slot-2 .actions,
+#amadeus .tree-1 .tier-2 .slot-2 .skill-details,
+#amadeus .tree-1 .tier-2 .slot-3 .actions,
+#amadeus .tree-1 .tier-2 .slot-3 .skill-details,
+#amadeus .tree-2 .tier-3 .slot-1 .actions,
+#amadeus .tree-2 .tier-3 .slot-1 .skill-details,
+#amadeus .tree-2 .tier-3 .slot-3 .actions,
+#amadeus .tree-2 .tier-3 .slot-3 .skill-details,
+#selius .tree-1 .tier-1 .slot-1 .actions,
+#selius .tree-1 .tier-1 .slot-1 .skill-details,
+#selius .tree-1 .tier-1 .slot-2 .actions,
+#selius .tree-1 .tier-1 .slot-2 .skill-details,
+#selius .tree-1 .tier-3 .slot-3 .actions,
+#selius .tree-1 .tier-3 .slot-3 .skill-details,
+#selius .tree-2 .tier-2 .slot-1 .actions,
+#selius .tree-2 .tier-2 .slot-1 .skill-details,
+#selius .tree-2 .tier-3 .slot-1 .actions,
+#selius .tree-2 .tier-3 .slot-1 .skill-details,
+#selius .tree-2 .tier-3 .slot-3 .actions,
+#selius .tree-2 .tier-3 .slot-3 .skill-details,
+#selius .tree-3 .tier-3 .slot-2 .actions,
+#selius .tree-3 .tier-3 .slot-2 .skill-details,
+#selius .tree-3 .tier-3 .slot-3 .actions,
+#selius .tree-3 .tier-3 .slot-3 .skill-details {
+  position: relative;
+  z-index: 100; }
+
+#gislan .tree-1 .tier-1 .slot-3::after,
+#marvek .tree-2 .tier-1 .slot-3::after,
+#carabel .tree-1 .tier-2 .slot-3::after,
+#carabel .tree-2 .tier-2 .slot-3::after,
+#rudolfus .tree-1 .tier-1 .slot-3::after,
+#owl .tree-3 .tier-1 .slot-3::after,
+#nim .tree-2 .tier-1 .slot-2::after,
+#amadeus .tree-1 .tier-2 .slot-2::after {
+  height: 432px; }
+
+#gislan .tree-1 .tier-2,
+#gislan .tree-3 .tier-3,
+#gislan .tree-3 .tier-1,
+#gislan .tree-3 .tier-4,
+#marvek .tree-1 .tier-1,
+#marvek .tree-2 .tier-2,
+#marvek .tree-3 .tier-1,
+#marvek .tree-3 .tier-2,
+#marvek .tree-3 .tier-4,
+#carabel .tree-1 .tier-1,
+#carabel .tree-1 .tier-3,
+#carabel .tree-2 .tier-1,
+#carabel .tree-2 .tier-3,
+#carabel .tree-3 .tier-1,
+#rudolfus .tree-1 .tier-2,
+#rudolfus .tree-2 .tier-1,
+#rudolfus .tree-2 .tier-4,
+#rudolfus .tree-3 .tier-1,
+#owl .tree-1 .tier-1,
+#owl .tree-1 .tier-2,
+#owl .tree-2 .tier-1,
+#owl .tree-2 .tier-2,
+#owl .tree-3 .tier-2,
+#nim .tree-1 .tier-1,
+#nim .tree-1 .tier-2,
+#nim .tree-2 .tier-1,
+#nim .tree-2 .tier-4,
+#nim .tree-3 .tier-1,
+#nim .tree-3 .tier-2,
+#amadeus .tree-1 .tier-4,
+#selius .tree-1 .tier-1 {
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start; }
+
+#rudolfus .tree-2 .tier-2,
+#nim .tree-1 .tier-4,
+#selius .tree-3 .tier-1,
+#selius .tree-3 .tier-3 {
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end; }
+
+#gislan .tree-2 .tier-1,
+#selius .tree-2 .tier-1 {
+  -webkit-justify-content: center;
+  justify-content: center; }
 
 .tabs {
   margin: 0 0 -1px; }

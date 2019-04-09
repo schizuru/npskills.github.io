@@ -11,7 +11,8 @@
     .skill-description {
         min-height: 7em;
         max-height: 7em;
-        overflow: auto;
+        overflow-y: auto;
+        overflow-x: hidden;
     }
 }
 

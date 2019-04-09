@@ -26,8 +26,9 @@ $lang = 'en';
 
     <ul class="tabs js-tabs">
         <?php $index = 1; ?>
+        <?php $selected_character = 1; ?>
         <?php foreach ($characters as $character): ?>
-            <?php $is_selected = ($index == 1) ? ' is-selected' : ''; ?>
+            <?php $is_selected = ($index == $selected_character) ? ' is-selected' : ''; ?>
             <li class="tab<?= $is_selected ?>" data-target="<?= $character['directory'] ?>">
                 <?php
                 $character_name = ($lang == 'en') ? $character['directory'] : $character['name'][$lang];
@@ -44,7 +45,7 @@ $lang = 'en';
     <div class="tab-content">
         <?php $index = 1; ?>
         <?php foreach ($characters as $character): ?>
-            <?php $is_selected = ($index == 1) ? ' is-selected' : ''; ?>
+            <?php $is_selected = ($index == $selected_character) ? ' is-selected' : ''; ?>
             <div class="tab-pane<?= $is_selected ?>" id="pane-<?= $character['directory'] ?>">
                 <section class="character" id="<?= $character['directory'] ?>"  data-collapsed="true">
 

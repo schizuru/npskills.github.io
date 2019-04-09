@@ -56,30 +56,3 @@
         }
     }
 }
-
-#cornelius {
-    .tree-1 .tier-3 .slot-3,
-    .tree-2 .tier-3 .slot-3 {
-        position: relative;
-
-        &::after {
-            content: '';
-            display: inline-block;
-            background: #ccc;
-            width: 10px;
-            height: 190px;
-            position: absolute;
-            top: 82px;
-            left: 0;
-            right: 0;
-            margin: auto;
-        }
-
-        .actions,
-        .skill-details {
-            position: relative;
-            z-index: 100;
-
-        }
-    }
-}
