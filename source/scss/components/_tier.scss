@@ -4,10 +4,25 @@
     padding: 30px 5px 5px;
     margin: 5px;
     position: relative;
+    background: rgba(0, 0, 0, .1);
+    opacity: .6;
 
     &::before {
         position: absolute;
         top: 5px;
+    }
+
+    a {
+        cursor: not-allowed;
+    }
+
+    &.is-active {
+        background: transparent;
+        opacity: 1;
+
+        a {
+            cursor: pointer;
+        }
     }
 }
 

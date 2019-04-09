@@ -19,20 +19,23 @@ $lang = 'en';
 <body>
     <h1 class="page-title">Test</h1>
 
-    <label>Current Level
-        <input type="text" value="60">
-    </label>
-    <div>Remaining Points: 60</div>
+    <div class="loader">
+        <div class="left"><span></span></div>
+        <div class="right"><span></span></div>
+    </div>
 
     <ul class="tabs js-tabs">
         <?php $index = 1; ?>
         <?php foreach ($characters as $character): ?>
-            <?php $is_active = ($index == 1) ? ' is-active' : ''; ?>
-            <li class="tab<?= $is_active ?>" data-target="#pane-<?= $character['directory'] ?>">
+            <?php $is_selected = ($index == 1) ? ' is-selected' : ''; ?>
+            <li class="tab<?= $is_selected ?>" data-target="#pane-<?= $character['directory'] ?>">
                 <?php
                 $character_name = ($lang == 'en') ? $character['directory'] : $character['name'][$lang];
                 ?>
-                <a href="#"><?= $character_name ?></a>
+                <a href="#">
+                    <figure class="character-image"><img src="assets/img/<?= $character['directory'] ?>/<?= $character['directory'] ?>.png" alt=""></figure>
+                    <?= $character_name ?>
+                </a>
             </li>
             <?php $index++; ?>
         <?php endforeach ?>
@@ -41,16 +44,24 @@ $lang = 'en';
     <div class="tab-content">
         <?php $index = 1; ?>
         <?php foreach ($characters as $character): ?>
-            <?php $is_active = ($index == 1) ? ' is-active' : ''; ?>
-            <div class="tab-pane<?= $is_active ?>" id="pane-<?= $character['directory'] ?>">
+            <?php $is_selected = ($index == 1) ? ' is-selected' : ''; ?>
+            <div class="tab-pane<?= $is_selected ?>" id="pane-<?= $character['directory'] ?>">
                 <section class="character" id="<?= $character['directory'] ?>"  data-collapsed="true">
+
                     <h2 class="character-name"><?= $character['name'][$lang] ?></h2>
 
+                    <div class="points-control">
+                        <label>
+                            Current Level:
+                            <input class="user-input js-level" type="text" value="60">
+                        </label>
+                    </div>
+
                     <?php
-                    $lang = 'jp';
-                    include 'status-skills.php';
-                    $lang = 'en';
-                    include 'status-spells.php';
+                    // $lang = 'jp';
+                    // include 'status-skills.php';
+                    // $lang = 'en';
+                    // include 'status-spells.php';
                     ?>
                     <figure class="portrait"><img src="assets/img/<?= $character['directory'] ?>/<?= $character['directory'] ?>.png" alt=""></figure>
 

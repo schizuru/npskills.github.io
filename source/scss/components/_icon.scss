@@ -1,6 +1,5 @@
 $icon-size: 56px;
-$active-color: red;
-$hovered-color: #ccc;
+
 .skill-icon {
     background: $background-skill-icon;
     border: 2px solid $background-skill-icon;
@@ -23,17 +22,24 @@ $point-icon-size: 15px;
     width: $point-icon-size;
     height: $point-icon-size;
     border-radius: 50%;
-    border: 1px solid $color-border;
+    border: 2px solid $color-border;
     float: right;
+}
 
-    &:hover {
-        background: $hovered-color;
-
-        ~ .point-icon {
-            background: $hovered-color;
-        }
+.is-active {
+    .skill-icon:hover {
+        border-color: $color-accent;
     }
 
+    .point-icon:hover {
+        // background: $color-accent;
+        border-color: $color-accent;
+
+        ~ .point-icon {
+            // background: $color-accent;
+            border-color: $color-accent;
+        }
+    }
 }
 
 .points {
@@ -41,9 +47,9 @@ $point-icon-size: 15px;
     margin: 5px 0;
 }
 
-.is-hovered[data-points='0'] .point-1 {
-    background: $hovered-color;
-}
+// .is-hovered[data-points='0'] .point-1 {
+//     background: #ccc;
+// }
 
 [data-points='1'] .point-1,
 [data-points='2'] .point-2,
@@ -54,5 +60,6 @@ $point-icon-size: 15px;
 [data-points='4'] .point-4 ~ .point-icon,
 [data-points='5'] .point-5,
 [data-points='5'] .point-5 ~ .point-icon {
-    background: $active-color;
+    background: $color-accent;
+    // border-color: $color-accent;
 }

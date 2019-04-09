@@ -1,9 +1,5 @@
 .tabs {
-    li {
-        display: inline-block;
-        border: 1px solid $color-border;
-        text-transform: capitalize;
-    }
+    margin: 0 0 -1px;
 
     a {
         display: block;
@@ -11,9 +7,18 @@
         width: 10em;
         text-align: center;
     }
+}
 
-    .is-active {
-        background: $background-gray-light;
+.tab {
+    display: inline-block;
+    border: 1px solid $color-border;
+    text-transform: capitalize;
+    background: $background-gray-light;
+
+    &.is-selected {
+        background: #fff;
+        border-bottom: 1px solid #fff;
+        padding-top: 10px;
     }
 }
 
@@ -22,7 +27,22 @@
     padding: 10px;
     display: none;
 
-    &.is-active {
+    &.is-selected {
         display: block;
     }
+}
+
+.character-image {
+    height: 50px;
+    margin: 0 0 5px;
+    opacity: .5;
+
+    img {
+        max-height: 100%;
+    }
+}
+
+.is-selected .character-image,
+.tab:hover .character-image {
+         opacity: 1;
 }

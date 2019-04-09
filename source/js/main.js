@@ -1,19 +1,43 @@
 var className = {
-    active: 'is-active'
+    active: 'is-active',
+    selected: 'is-selected'
 };
 
 $(document).ready(function() {
+
+    $(document).on('click', 'a', function(event) {
+        event.preventDefault();
+    });
+
     $('.js-tabs').on('click', '.tab', function() {
-        var tab = $(this),
-            targetElement = tab.data('target');
-        tab.siblings().removeClass(className.active);
-        $('.tab-pane').removeClass(className.active);
-        tab.addClass('is-active');
-        $(targetElement).addClass(className.active);
+        var self = $(this),
+            targetElement = self.data('target');
+        self.siblings().removeClass(className.selected);
+        $('.tab-pane').removeClass(className.selected);
+        self.addClass(className.selected);
+        $(targetElement).addClass(className.selected);
         console.log(targetElement);
     });
-});
 
+    $('.js-level').on('click', function() {
+        $(this).select();
+    });
+
+    $('.is-active .js-point-icon').on('click', function() {
+        var self = $(this),
+            parent = self.closest('.js-slot'),
+            currentPoints = parent.data('points'),
+            usedPoints = self.data('points');
+
+        if (currentPoints === usedPoints) {
+            parent.attr('data-points', 0).data('points', 0);
+        } else {
+            parent.attr('data-points', usedPoints).data('points', usedPoints);
+        }
+    });
+
+
+});
 
 // var className = 'is-hovered';
 // var skillIcons = document.getElementsByClassName('js-skill-icon');
