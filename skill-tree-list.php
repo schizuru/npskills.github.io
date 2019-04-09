@@ -2,11 +2,12 @@
     <div class="remaining-points">
         Remaining Points: <span class="js-remaining-points">60</span>
         <button class="button button-reset js-reset">Reset</button>
+        <div class="used-points"><span class="js-used-points">0</span>/<span class="js-level">60</span></div>
     </div>
     <div class="inner-wrapper">
         <?php $tree_index = 1; ?>
         <?php foreach ($character['trees'] as $tree): ?>
-            <div class="tree tree-<?= $tree_index ?>">
+            <div class="tree tree-<?= $tree_index ?> js-tree-points" data-tree-points="0" data-active-tiers="1">
                 <?php $tier_index = 1; ?>
                 <?php foreach ($tree['tiers'] as $tier): ?>
                     <?php $is_active = ($tier_index == 1) ? ' is-active' : ''; ?>

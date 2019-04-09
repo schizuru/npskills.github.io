@@ -69,7 +69,8 @@ a {
   position: absolute; }
 
 .character-name {
-  margin: 0 0 10px; }
+  margin: 0 0 10px;
+  float: right; }
 
 .skill-name {
   font-size: 1.2rem; }

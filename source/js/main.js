@@ -1,4 +1,6 @@
 var selectedCharacter = 'cornelius',
+    defaultLevel = 60,
+    userLevel = 60,
     className = {
     active: 'is-active',
     selected: 'is-selected'
@@ -26,48 +28,81 @@ $(document).ready(function() {
         })
         .on('keyup', function() {
             var enteredValue = $(this).val(),
-                targetElement = $('#' + selectedCharacter + ' .js-remaining-points');
-            if (enteredValue < 61) {
-                targetElement.html(enteredValue);
+                targetElement = $('#' + selectedCharacter + ' .js-remaining-points'),
+                targetElement2 = $('#' + selectedCharacter + ' span.js-level');
+            if (enteredValue < (defaultLevel+1)) {
+                userLevel = enteredValue;
+                targetElement.html(userLevel);
+                targetElement2.html(userLevel);
             } else {
-                targetElement.html(60);
-                $(this).val(60);
+                targetElement.html(defaultLevel);
+                targetElement2.html(defaultLevel);
+                $(this).val(defaultLevel);
             }
     });
 
     $('.js-reset').on('click', function() {
-        $('#' + selectedCharacter + ' .js-remaining-points').html(60);
-        $('#' + selectedCharacter + ' .js-level').val(60);
+        $('#' + selectedCharacter + ' .js-remaining-points').html(defaultLevel);
+        $('#' + selectedCharacter + ' .js-used-points').html(0);
+        $('#' + selectedCharacter + ' .user-input.js-level').val(defaultLevel);
+        $('#' + selectedCharacter + ' span.js-level').html(defaultLevel);
+        $('#' + selectedCharacter + ' .js-slot').attr('data-points', 0).data('points', 0);
     });
 
     $('.is-active')
         .on('click', '.js-point-icon', function() {
             var self = $(this),
                 parent = self.closest('.js-slot'),
-                currentPoints = parent.data('points'),
-                usedPoints = self.data('points'),
-                remainingPoints = $('#' + selectedCharacter + ' .js-remaining-points').html();
+                currentTree = self.closest('.js-tree-points'),
+                currentTreePoints = currentTree.data('tree-points'),
+                slotPoints = {
+                    current: parent.data('points'),
+                    entered: self.data('points')
+                },
+                usedPoints = $('#' + selectedCharacter + ' .js-used-points').html(),
+                remainingPoints = {
+                    current: $('#' + selectedCharacter + ' .js-remaining-points').html(),
+                    new: 0,
+                    element: $('#' + selectedCharacter + ' .js-remaining-points')
+                };
 
-            console.log(remainingPoints);
-            if (currentPoints === usedPoints) {
-                parent.attr('data-points', 0).data('points', 0);
-            } else {
-                parent.attr('data-points', usedPoints).data('points', usedPoints);
+            if(remainingPoints.current > slotPoints.entered) {
+                if (slotPoints.current === slotPoints.entered) {
+                    remainingPoints.new = 1 * remainingPoints.current + slotPoints.current;
+                    parent.attr('data-points', 0).data('points', 0);
+                    currentTreePoints = 1 * currentTreePoints - slotPoints.entered;
+                } else {
+                    remainingPoints.new = 1 * remainingPoints.current + (slotPoints.current - slotPoints.entered);
+                    parent.attr('data-points', slotPoints.entered).data('points', slotPoints.entered);
+                    currentTreePoints = 1 * currentTreePoints + (slotPoints.entered - slotPoints.current);
+                }
+                var activeTiers = Math.trunc(currentTreePoints/5) + 1;
+                currentTree.attr('data-tree-points', currentTreePoints).data('tree-points', currentTreePoints);
+                currentTree.attr('data-active-tiers', activeTiers).data('active-tiers', activeTiers);
+                $('#' + selectedCharacter + ' .js-used-points').html(1 * userLevel - remainingPoints.new);
+                $('#' + selectedCharacter + ' .js-remaining-points').html(remainingPoints.new);
+
+
+
+
             }
 
 
-        })
-        .on('click', '.js-skill-icon', function() {
-            var self = $(this),
-                parent = self.closest('.js-slot'),
-                currentPoints = parent.data('points'),
-                remainingPoints = $('#' + selectedCharacter + ' .js-remaining-points').html();
-                console.log(remainingPoints);
-            if (currentPoints < 5) {
-                parent.data('points', currentPoints + 1).attr('data-points', currentPoints + 1);
-            } else {
-                parent.attr('data-points', 0).data('points', 0);
-            }
+        // })
+        // .on('click', '.js-skill-icon', function() {
+        //     var self = $(this),
+        //         parent = self.closest('.js-slot'),
+        //         currentPoints = parent.data('points'),
+        //         remainingPoints = $('#' + selectedCharacter + ' .js-remaining-points').html();
+
+        //     if(remainingPoints > remainingPoints) {
+        //         console.log(remainingPoints);
+        //     }
+        //     if (currentPoints < 5) {
+        //         parent.data('points', currentPoints + 1).attr('data-points', currentPoints + 1);
+        //     } else {
+        //         parent.attr('data-points', 0).data('points', 0);
+        //     }
 
     });
 
