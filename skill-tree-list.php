@@ -9,9 +9,10 @@
         <?php foreach ($character['trees'] as $tree): ?>
             <div class="tree tree-<?= $tree_index ?> js-tree-points" data-tree-points="0" data-active-tiers="1">
                 <?php $tier_index = 1; ?>
+                <div class="tree-points">0</div>
                 <?php foreach ($tree['tiers'] as $tier): ?>
                     <?php $is_active = ($tier_index == 1) ? ' is-active' : ''; ?>
-                    <div class="tier tier-<?= $tier_index ?><?= $is_active ?>" data-collapsed="true">
+                    <div class="tier tier-<?= $tier_index ?><?= $is_active ?>" data-tier-points="0">
                         <?php foreach ($tier['slots'] as $skill): ?>
                             <div class="slot slot-<?= $skill['slot'] ?> js-slot" data-points="0">
                                 <h3 class="skill-name"><?= $skill['name'][$lang] ?></h3>

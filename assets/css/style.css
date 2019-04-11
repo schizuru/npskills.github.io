@@ -207,19 +207,12 @@ a {
   border: 1px solid #aaa;
   padding: 30px 5px 5px;
   margin: 5px;
-  position: relative;
-  background: rgba(0, 0, 0, 0.1);
-  opacity: .6; }
+  position: relative; }
   .tier::before {
     position: absolute;
     top: 5px; }
   .tier a {
     cursor: not-allowed; }
-  .tier.is-active {
-    background: transparent;
-    opacity: 1; }
-    .tier.is-active a {
-      cursor: pointer; }
 
 .tier-1::before {
   content: 'I'; }
@@ -239,6 +232,30 @@ a {
 .tier[data-collapsed='false'] .skill-details {
   display: block; }
 
+[data-active-tiers='1'] .tier-2,
+[data-active-tiers='1'] .tier-3,
+[data-active-tiers='1'] .tier-4,
+[data-active-tiers='1'] .tier-5,
+[data-active-tiers='2'] .tier-3,
+[data-active-tiers='2'] .tier-4,
+[data-active-tiers='2'] .tier-5,
+[data-active-tiers='3'] .tier-4,
+[data-active-tiers='3'] .tier-5,
+[data-active-tiers='4'] .tier-5 {
+  background: rgba(0, 0, 0, 0.1);
+  opacity: .6; }
+  [data-active-tiers='1'] .tier-2 a,
+  [data-active-tiers='1'] .tier-3 a,
+  [data-active-tiers='1'] .tier-4 a,
+  [data-active-tiers='1'] .tier-5 a,
+  [data-active-tiers='2'] .tier-3 a,
+  [data-active-tiers='2'] .tier-4 a,
+  [data-active-tiers='2'] .tier-5 a,
+  [data-active-tiers='3'] .tier-4 a,
+  [data-active-tiers='3'] .tier-5 a,
+  [data-active-tiers='4'] .tier-5 a {
+    cursor: pointer; }
+
 .skill-trees {
   border: 1px solid #ccc;
   position: relative;
@@ -251,6 +268,10 @@ a {
 
 .tree {
   width: 33.33333%; }
+
+.tree-points {
+  text-align: right;
+  margin: 0 5px; }
 
 #cornelius .tree-1 .tier-3 .slot-3::after,
 #cornelius .tree-2 .tier-3 .slot-3::after,

@@ -47,7 +47,7 @@ $lang = 'en';
         <?php foreach ($characters as $character): ?>
             <?php $is_selected = ($index == $selected_character) ? ' is-selected' : ''; ?>
             <div class="tab-pane<?= $is_selected ?>" id="pane-<?= $character['directory'] ?>">
-                <section class="character" id="<?= $character['directory'] ?>"  data-collapsed="true">
+                <section class="character" id="<?= $character['directory'] ?>">
 
                     <h2 class="character-name"><?= $character['name'][$lang] ?></h2>
 

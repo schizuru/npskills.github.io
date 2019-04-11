@@ -2,8 +2,22 @@ var selectedCharacter = 'cornelius',
     defaultLevel = 60,
     userLevel = 60,
     className = {
-    active: 'is-active',
-    selected: 'is-selected'
+        active: 'is-active',
+        selected: 'is-selected'
+    },
+    dataAttr = {
+        tree: 'tree-points',
+        tier: 'tier-points',
+        slot: 'slot-points'
+    },
+    elemenst = {
+        tree: 'tree-points',
+        tier: 'tier-points',
+        slot: 'slot-points'
+    }
+;
+
+var updatePoints = function() {
 };
 
 $(document).ready(function() {
@@ -46,10 +60,11 @@ $(document).ready(function() {
         $('#' + selectedCharacter + ' .js-used-points').html(0);
         $('#' + selectedCharacter + ' .user-input.js-level').val(defaultLevel);
         $('#' + selectedCharacter + ' span.js-level').html(defaultLevel);
-        $('#' + selectedCharacter + ' .js-slot').attr('data-points', 0).data('points', 0);
+        $('#' + selectedCharacter + ' .js-slot').attr('data-slot-points', 0).data('slot-points', 0);
+        $('#' + selectedCharacter + ' .js-tree-points').attr('data-tree-points', 0).data('tree-points', 0).attr('data-active-tiers', 1).data('active-tiers', 1);
     });
 
-    $('.is-active')
+    $('.skill-trees')
         .on('click', '.js-point-icon', function() {
             var self = $(this),
                 parent = self.closest('.js-slot'),
@@ -66,14 +81,14 @@ $(document).ready(function() {
                     element: $('#' + selectedCharacter + ' .js-remaining-points')
                 };
 
-            if(remainingPoints.current > slotPoints.entered) {
+            if(remainingPoints.current >= slotPoints.entered) {
                 if (slotPoints.current === slotPoints.entered) {
                     remainingPoints.new = 1 * remainingPoints.current + slotPoints.current;
-                    parent.attr('data-points', 0).data('points', 0);
+                    parent.attr('data-slot-points', 0).data('slot-points', 0);
                     currentTreePoints = 1 * currentTreePoints - slotPoints.entered;
                 } else {
                     remainingPoints.new = 1 * remainingPoints.current + (slotPoints.current - slotPoints.entered);
-                    parent.attr('data-points', slotPoints.entered).data('points', slotPoints.entered);
+                    parent.attr('data-slot-points', slotPoints.entered).data('slot-points', slotPoints.entered);
                     currentTreePoints = 1 * currentTreePoints + (slotPoints.entered - slotPoints.current);
                 }
                 var activeTiers = Math.trunc(currentTreePoints/5) + 1;
@@ -81,10 +96,6 @@ $(document).ready(function() {
                 currentTree.attr('data-active-tiers', activeTiers).data('active-tiers', activeTiers);
                 $('#' + selectedCharacter + ' .js-used-points').html(1 * userLevel - remainingPoints.new);
                 $('#' + selectedCharacter + ' .js-remaining-points').html(remainingPoints.new);
-
-
-
-
             }
 
 

@@ -5,8 +5,7 @@
     padding: 30px 5px 5px;
     margin: 5px;
     position: relative;
-    background: rgba(0, 0, 0, .1);
-    opacity: .6;
+
 
     &::before {
         position: absolute;
@@ -15,15 +14,6 @@
 
     a {
         cursor: not-allowed;
-    }
-
-    &.is-active {
-        background: transparent;
-        opacity: 1;
-
-        a {
-            cursor: pointer;
-        }
     }
 }
 
@@ -57,3 +47,20 @@
     }
 }
 
+[data-active-tiers='1'] .tier-2,
+[data-active-tiers='1'] .tier-3,
+[data-active-tiers='1'] .tier-4,
+[data-active-tiers='1'] .tier-5,
+[data-active-tiers='2'] .tier-3,
+[data-active-tiers='2'] .tier-4,
+[data-active-tiers='2'] .tier-5,
+[data-active-tiers='3'] .tier-4,
+[data-active-tiers='3'] .tier-5,
+[data-active-tiers='4'] .tier-5 {
+    background: rgba(0, 0, 0, .1);
+    opacity: .6;
+
+    a {
+        cursor: pointer;
+    }
+}
