@@ -15,14 +15,6 @@ body {
     line-height: 1.2;
 }
 
-h1, h2, h3 {
-    font-weight: 700;
-}
-
-.portrait {
-    position: absolute;
-}
-
 a {
     color: $color-link;
 
@@ -30,50 +22,3 @@ a {
         text-decoration: none;
     }
 }
-
-.data-table {
-    border-collapse: collapse;
-
-    th,
-    td {
-        padding: 5px;
-        border: 1px solid $border-color;
-    }
-}
-
-.list {
-    li {
-        // display: inline-block;
-        padding: 10px;
-    }
-}
-
-.button {
-    background: $border-color;
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
-    text-align: center;
-    display: block;
-    border-radius: 2px;
-    font-size: 2rem;
-    color: #fff;
-    text-decoration: none;
-    position: absolute;
-    bottom: 5px;
-}
-
-.plus {
-    left: 5px;
-}
-.minus {
-    line-height: 18px;
-    right: 5px;
-}
-
-.character-name,
-.skill-description,
-.skill-name {
-    opacity: .3;
-}
-

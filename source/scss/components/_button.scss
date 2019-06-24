@@ -1,0 +1,22 @@
+.button {
+    background: $color-border;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    display: block;
+    border-radius: 2px;
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    bottom: 5px;
+}
+
+.plus {
+    left: 5px;
+}
+.minus {
+    line-height: 18px;
+    right: 5px;
+}

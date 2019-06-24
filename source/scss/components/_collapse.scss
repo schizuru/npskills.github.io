@@ -1,0 +1,28 @@
+.collapse {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    background: $color-border;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+[data-collapsed='true'] > .collapse::before {
+    content: '+';
+}
+
+[data-collapsed='false'] > .collapse::before {
+    content: '-';
+}
+
+.tree {
+    .collapse {
+        top: 5px;
+        border-radius: 50%;
+    }
+}

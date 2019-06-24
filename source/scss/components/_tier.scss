@@ -1,0 +1,42 @@
+.tier {
+    @include flexbox;
+    border: 1px solid $color-border;
+    padding: 30px 5px 5px;
+    margin: 5px;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        top: 5px;
+    }
+}
+
+.tier-1::before {
+    content: 'I';
+}
+.tier-2::before {
+    content: 'II';
+}
+.tier-3::before {
+    content: 'III';
+}
+.tier-4::before {
+    content: 'IV';
+}
+.tier-5::before {
+    content: 'V';
+}
+
+.tier {
+    &[data-collapsed='true'] {
+        .skill-details {
+            // display: none;
+        }
+
+    }
+    &[data-collapsed='false'] {
+        .skill-details {
+            display: block;
+        }
+    }
+}

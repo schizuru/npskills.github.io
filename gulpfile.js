@@ -77,17 +77,24 @@ gulp.task('css', ['csslint'], function() {
 
 gulp.task('jshint', function() {
     console.log('============================================================================== JS');
-    gulp.src([
-        paths.js.src + '**',
-        '!' + paths.js.src + 'vendor/**'
-        ])
+    gulp
+        .src([
+                paths.js.src + '**',
+                '!' + paths.js.src + 'vendor/**'
+            ])
         .pipe(plugins.jshint())
         .pipe(plugins.jshint.reporter('jshint-stylish'));
 });
 
 gulp.task('js', ['jshint'], function() {
     return gulp
-        .src(paths.js.src + '*.js')
+        .src([
+                paths.js.src + 'skills.js',
+                paths.js.src + 'data.js',
+                paths.js.src + 'functions.js',
+                paths.js.src + 'ui.js',
+                paths.js.src + 'main.js'
+            ])
         .pipe(plugins.sourcemaps.init())
         .pipe(plugins.concat('script.js'))
         .pipe(plugins.sourcemaps.write('../maps'))
